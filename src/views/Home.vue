@@ -1,18 +1,27 @@
 <template>
-  <div class="home">
-    <img src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <transition name="fade" mode="out-in">
+    <main>
+      <HomeHero/>
+      <HomeServices/>
+      <HomeSocial/>
+      <Partners/>
+    </main>
+  </transition>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+import HomeHero from "@/components/HomeHero.vue";
+import HomeServices from "@/components/HomeServices.vue";
+import HomeSocial from "@/components/HomeSocial.vue";
+import Partners from "@/components/Partners.vue";
 
 export default {
-  name: "home",
   components: {
-    HelloWorld
-  }
+    HomeHero,
+    HomeServices,
+    HomeSocial,
+    Partners
+  },
+  name: "Home"
 };
 </script>
