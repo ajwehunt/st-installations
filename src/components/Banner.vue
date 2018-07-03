@@ -1,5 +1,5 @@
 <template>
-  <section :id=imgId class='banner'>
+  <section :id="imgId" class='banner'>
     <div id="banner-filter"></div>
     <h1>{{ title }}</h1>
   </section>

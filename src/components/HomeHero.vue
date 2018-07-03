@@ -10,7 +10,9 @@
         <img :src="mainImageSrc">
       </div>
       <div id="hero-image-list">
-        <div v-for="img in images" :key="img.id"><img :src="img.image"></div>
+        <div v-for="img in images" :key="img.id">
+          <img :src="img.image">
+        </div>
       </div>
     </div>
   </section>

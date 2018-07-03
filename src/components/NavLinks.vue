@@ -1,19 +1,20 @@
 <template>
   <ul class="navigation">
-      <router-link v-for="route in routes" tag="li" :key="route.key" :to="route.path" >{{route.name}}</router-link>
+      <router-link
+        v-for="route in $router.options.routes"
+        v-if="!route.meta.hidden"
+        tag="li"
+        :key="route.path"
+        :to="route"
+      >
+        {{route.name}}
+      </router-link>
   </ul>
 </template>
 
 <script>
-import router from "@/router.js";
-
 export default {
-  name: "NavLinks",
-  data() {
-    return {
-      routes: router.options.routes.slice(0, -1)
-    };
-  }
+  name: "NavLinks"
 };
 </script>
 

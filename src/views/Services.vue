@@ -3,7 +3,14 @@
       <div>
         <Banner title="WE LOVE WHAT WE DO" img-id="services-img" />
         <div id="services-panel-wrapper" class="container">
-          <Services-panel v-for="service in services" :id="service.id" :key="service.key" :name="service.name" :image-src="service.imageSrc" :text="service.text"/>
+          <Services-panel
+            v-for="service in services" 
+            :id="service.id" 
+            :key="service.key" 
+            :name="service.name" 
+            :image-src="service.imageSrc" 
+            :text="service.text"
+          />
         </div>
         <Partners/>
       </div>

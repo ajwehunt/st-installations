@@ -55,7 +55,8 @@ export default new Router({
       path: "*",
       redirect: "/",
       meta: {
-        scrollToTop: true
+        scrollToTop: true,
+        hidden: true
       }
     }
   ],

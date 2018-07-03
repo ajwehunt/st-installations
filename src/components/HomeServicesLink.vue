@@ -1,5 +1,9 @@
 <template>
-  <router-link class="col-md-3 service-title" :to="`${serviceRoute.path}#${serviceId}`" tag="div">
+  <router-link
+    class="col-md-3 service-title"
+    :to="`${$router.options.routes[1].path}#${serviceId}`"
+    tag="div"
+  >
     <i :class="faIcon" class="fa" aria-hidden="true"></i>
     <h3>{{ serviceName }}</h3>
     <!-- <p>{{ summary }}</p> -->
@@ -8,16 +12,9 @@
 </template>
 
 <script>
-import router from "@/router.js";
-
 export default {
   props: ["serviceId", "serviceName", "summary", "faIcon"],
-  name: "HomeServicesLink",
-  data() {
-    return {
-      serviceRoute: router.options.routes[1]
-    };
-  }
+  name: "HomeServicesLink"
 };
 </script>
 

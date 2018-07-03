@@ -9,7 +9,6 @@
 <script>
 import Footer from "@/components/Footer.vue";
 import Header from "@/components/Header.vue";
-// import modernizr from 'modernizr'
 
 export default {
   components: {
@@ -28,9 +27,13 @@ export default {
     }
   },
   created() {
-    // document.addEventListener('touchstart', (e) => {
-    //   e.preventDefault()
-    // }, Modernizr.passiveeventlisteners ? {passive: true} : false)
+    document.addEventListener(
+      "touchstart",
+      e => {
+        e.preventDefault();
+      },
+      window.Modernizr.passiveeventlisteners ? { passive: true } : false
+    );
 
     window.addEventListener("scroll", this.handleScroll);
   },

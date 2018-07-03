@@ -7,7 +7,15 @@
         <div id="home-services-panel" class="col-sm-10">
           <h2>{{ content.home.servicesSummary }}</h2>
           <div id="home-services-grid">
-             <HomeServicesLink v-for="service in content.services" tag="div" :key="service.key" :serviceId="service.id" :serviceName="service.name" :summary="service.summmary" :faIcon="service.faIcon" />
+             <HomeServicesLink
+                v-for="service in content.services"
+                tag="div"
+                :key="service.key"
+                :serviceId="service.id"
+                :serviceName="service.name"
+                :summary="service.summmary"
+                :faIcon="service.faIcon" 
+              />
           </div>
         </div>
       </div>
