@@ -42,7 +42,6 @@ export default {
   font-weight: 800;
   line-height: 19px;
   letter-spacing: 2px;
-  margin-bottom: 22px;
-  margin-top: 32px;
+  margin: 32px 0 22px 0;
 }
 </style>

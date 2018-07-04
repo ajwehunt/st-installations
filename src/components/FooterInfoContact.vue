@@ -43,7 +43,7 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-left: 10px;
+  margin-left: -8px;
 }
 
 #footer-info-contact div {

@@ -39,7 +39,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="less">
 #home-services-panel {
   display: flex;
   align-items: center;
@@ -47,15 +47,15 @@ export default {
   padding: 50px 14px;
   margin-top: 10px;
   box-shadow: 0 3px 30px 5px rgba(0, 0, 0, 0.15);
-}
 
-#home-services-panel h2 {
-  padding: 0 10%;
-  font-size: 17px;
-  line-height: 36px;
-  color: #797979;
-  margin-bottom: 20px;
-  text-align: center;
+  h2 {
+    padding: 0 10%;
+    font-size: 17px;
+    line-height: 36px;
+    color: #797979;
+    margin-bottom: 20px;
+    text-align: center;
+  }
 }
 
 #home-services-grid {

@@ -21,7 +21,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="less">
 .service-panel {
   display: flex;
   flex-direction: column;
@@ -30,12 +30,12 @@ export default {
   margin-left: -5px;
   margin-right: -5px;
   padding: 50px 0;
-}
 
-.service-panel h1 {
-  font-size: 30px;
-  margin-bottom: 16px;
-  line-height: 1;
+  h1 {
+    font-size: 30px;
+    margin-bottom: 16px;
+    line-height: 1;
+  }
 }
 
 @media only screen and (min-width: 768px) {

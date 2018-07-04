@@ -57,7 +57,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="less">
 #home-hero-changer {
   position: relative;
   width: 100%;
@@ -102,13 +102,13 @@ export default {
   left: 0;
   right: 0;
   z-index: 10;
-}
 
-#hero-text-box h2 {
-  font-size: 40px;
-  font-weight: 400;
-  line-height: 50px;
-  color: #fff;
+  h2 {
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 50px;
+    color: #fff;
+  }
 }
 
 @media only screen and (min-width: 320px) {

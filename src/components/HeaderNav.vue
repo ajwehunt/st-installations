@@ -21,7 +21,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="less">
 .navbar-wrap {
   background: #fff;
   z-index: 5;
@@ -39,43 +39,45 @@ export default {
   padding: 10px;
   transition: 0.08s;
   transition-delay: 50ms;
+
+  img {
+    height: 150px;
+    transition: 0.08s;
+    transition-delay: 50ms;
+    cursor: pointer;
+  }
 }
 
-.sticky .navbar-main {
-  padding-bottom: 0px;
-}
+.sticky {
+  .navbar-main {
+    padding-bottom: 0px;
 
-.navbar-main img {
-  height: 150px;
-  transition: 0.08s;
-  transition-delay: 50ms;
-  cursor: pointer;
-}
-
-.sticky .navbar-main img {
-  height: 44px;
+    img {
+      height: 44px;
+    }
+  }
 }
 
 #header-nav-links {
   display: none;
-}
 
-#header-nav-links li {
-  font-size: 15px;
-  font-weight: 600;
-}
+  li {
+    font-size: 15px;
+    font-weight: 600;
 
-#header-nav-links li:last-child {
-  border: 3px solid #7f7f7f;
-  padding: 6px;
-  border-radius: 2px;
-}
+    &:last-child {
+      border: 3px solid #7f7f7f;
+      padding: 6px;
+      border-radius: 2px;
+    }
 
-#header-nav-links li:last-child:hover,
-#header-nav-links li.router-link-exact-active:last-child {
-  border: 3px solid #a7090a;
-  color: #fff;
-  background: #a7090a;
+    &:last-child:hover,
+    &.router-link-exact-active:last-child {
+      border: 3px solid #a7090a;
+      color: #fff;
+      background: #a7090a;
+    }
+  }
 }
 
 @media only screen and (min-width: 768px) {

@@ -18,7 +18,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="less">
 .service-title {
   margin: 15px 0;
   height: 164px;
@@ -28,18 +28,18 @@ export default {
   justify-content: center;
   align-items: center;
   text-align: center;
-}
 
-.service-title:hover {
-  box-shadow: 0 3px 30px 5px rgba(0, 0, 0, 0.15);
-  -webkit-transition: all linear 0.2s;
-  transition: all linear 0.2s;
-  cursor: pointer;
-}
+  &:hover {
+    box-shadow: 0 3px 30px 5px rgba(0, 0, 0, 0.15);
+    -webkit-transition: all linear 0.2s;
+    transition: all linear 0.2s;
+    cursor: pointer;
+  }
 
-.service-title i {
-  font-size: 26px;
-  margin-bottom: 10px;
+  i {
+    font-size: 26px;
+    margin-bottom: 10px;
+  }
 }
 
 /* #home-services-grid button {

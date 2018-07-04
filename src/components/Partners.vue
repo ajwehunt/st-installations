@@ -43,50 +43,52 @@ export default {
 };
 </script>
 
-<style>
-#home-partners .container {
-  padding: 0;
-  border-bottom: 2px solid #f4f4f4;
-}
+<style lang="less">
+#home-partners {
+  .container {
+    padding: 0;
+    border-bottom: 2px solid #f4f4f4;
+  }
 
-#home-partners .row {
-  margin: 30px 14% 60px;
-}
+  .row {
+    margin: 30px 14% 60px;
+  }
 
-#home-partners .VueCarousel-slide {
-  height: 70px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+  img {
+    height: 32px;
+    width: auto;
+  }
 
-#home-partners .VueCarousel-slide div {
-  display: flex;
-  justify-content: center;
-}
+  .VueCarousel-slide {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-#home-partners .VueCarousel-navigation-button {
-  font-size: 19px !important;
-  top: 36px !important;
-}
+    div {
+      display: flex;
+      justify-content: center;
+    }
+  }
 
-#home-partners .VueCarousel-navigation-prev {
-  left: -8%;
-  color: #797979;
-}
+  .VueCarousel-navigation-button {
+    font-size: 19px !important;
+    top: 36px !important;
+  }
 
-#home-partners .VueCarousel-navigation-next {
-  right: -8%;
-  color: #797979;
-}
+  .VueCarousel-navigation-prev {
+    left: -8%;
+    color: #797979;
+  }
 
-#home-partners .VueCarousel-pagination {
-  display: none;
-}
+  .VueCarousel-navigation-next {
+    right: -8%;
+    color: #797979;
+  }
 
-#home-partners img {
-  height: 32px;
-  width: auto;
+  .VueCarousel-pagination {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -96,20 +98,22 @@ export default {
 }
 
 @media only screen and (min-width: 992px) {
-  #home-partners .VueCarousel-navigation-button {
-    font-size: 24px !important;
-  }
+  #home-partners {
+    img {
+      height: 50px;
+    }
 
-  #home-partners img {
-    height: 50px;
-  }
+    .VueCarousel-navigation-button {
+      font-size: 24px !important;
+    }
 
-  #home-partners .VueCarousel-navigation-prev {
-    left: -4%;
-  }
+    .VueCarousel-navigation-prev {
+      left: -4%;
+    }
 
-  #home-partners .VueCarousel-navigation-next {
-    right: -4%;
+    .VueCarousel-navigation-next {
+      right: -4%;
+    }
   }
 }
 </style>
