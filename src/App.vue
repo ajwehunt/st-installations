@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Header id="header" :class="isHeaderSticky" />
+    <Header id="header" :class="getStickyStatus" />
     <router-view id="main" />
     <Footer/>
   </div>
@@ -18,12 +18,12 @@ export default {
   name: "App",
   data() {
     return {
-      sticky: false
+      stickyStatus: ""
     };
   },
   computed: {
-    isHeaderSticky: function() {
-      return this.sticky ? "sticky" : "";
+    getStickyStatus: function() {
+      return this.stickyStatus;
     }
   },
   created() {
@@ -34,7 +34,6 @@ export default {
       },
       window.Modernizr.passiveeventlisteners ? { passive: true } : false
     );
-
     window.addEventListener("scroll", this.handleScroll);
   },
   destroyed() {
@@ -42,12 +41,21 @@ export default {
   },
   methods: {
     handleScroll() {
-      const isSticky = this.sticky;
+      const stickyStatus = this.stickyStatus;
       const pageY = window.pageYOffset;
-      if (!isSticky && pageY >= 123) {
-        this.sticky = true;
-      } else if (isSticky && pageY < 123) {
-        this.sticky = false;
+      const headerContactHeight = 50;
+      const headerNavHeight = 123;
+
+      if (stickyStatus != "sticky-both" && pageY >= headerNavHeight) {
+        this.stickyStatus = "sticky-both";
+      } else if (
+        stickyStatus != "sticky" &&
+        pageY < headerNavHeight &&
+        pageY >= headerContactHeight
+      ) {
+        this.stickyStatus = "sticky";
+      } else if (stickyStatus != "" && pageY < headerContactHeight) {
+        this.stickyStatus = "";
       }
     }
   }
@@ -216,6 +224,11 @@ hr {
 }
 
 #header.sticky {
+  position: fixed;
+  top: -50px;
+}
+
+#header.sticky-both {
   position: fixed;
   top: -123px;
 }

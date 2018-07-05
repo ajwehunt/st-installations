@@ -1,19 +1,25 @@
 <template>
   <transition name="fade" mode="out-in">
     <div>
-      <Banner title="WHAT PEOPLE ARE SAYING" img-id="testimonials-img"/>
+      <Banner :title="testimonialsContent.bannerText" img-id="testimonials-img"/>
     </div>
   </transition>
 </template>
 
 <script>
+import content from "@/services/content.js";
 import Banner from "@/components/Banner.vue";
 
 export default {
   components: {
     Banner
   },
-  name: "Testimonials"
+  name: "Testimonials",
+  data() {
+    return {
+      testimonialsContent: content.testimonials
+    };
+  }
 };
 </script>
 

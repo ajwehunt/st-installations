@@ -63,7 +63,7 @@ export default {
 
   li {
     font-size: 15px;
-    font-weight: 600;
+    font-weight: 700;
 
     &:last-child {
       border: 3px solid #7f7f7f;
