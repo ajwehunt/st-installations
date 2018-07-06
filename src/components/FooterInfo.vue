@@ -11,8 +11,8 @@
 </template>
 
 <script>
-import content from "@/services/content.js";
 import FooterInfoContact from "@/components/FooterInfoContact.vue";
+import content from "@/services/content.js";
 
 export default {
   components: {
@@ -21,7 +21,7 @@ export default {
   name: "FooterInfo",
   data() {
     return {
-      aboutContent: content.footer.about
+      aboutContent: content.component.footer.about
     };
   }
 };

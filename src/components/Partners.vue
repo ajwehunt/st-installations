@@ -1,8 +1,8 @@
 <template>
-  <section id="home-partners">
+  <section id="partners">
     <div class="container">
       <div class="row">
-        <h2 class="section-title">OUR PARTNERS</h2>
+        <h2 class="section-title">{{ partners.headerText }}</h2>
         <hr class="section-hr">
         <carousel
           :autoplay=true
@@ -33,18 +33,24 @@
 
 <script>
 import { Carousel, Slide } from "vue-carousel";
+import content from "@/services/content.js";
 
 export default {
   components: {
     Carousel,
     Slide
   },
-  name: "HomePartners"
+  name: "Partners",
+  data() {
+    return {
+      partners: content.component.partners
+    };
+  }
 };
 </script>
 
 <style lang="less">
-#home-partners {
+#partners {
   .container {
     padding: 0;
     border-bottom: 2px solid #f4f4f4;
@@ -92,13 +98,13 @@ export default {
 }
 
 @media only screen and (min-width: 768px) {
-  #home-partners .VueCarousel-pagination {
+  #partners .VueCarousel-pagination {
     display: block;
   }
 }
 
 @media only screen and (min-width: 992px) {
-  #home-partners {
+  #partners {
     img {
       height: 50px;
     }

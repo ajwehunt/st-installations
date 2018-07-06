@@ -1,12 +1,12 @@
 <template>
     <transition name="fade" mode="out-in">
       <div>
-        <Banner title="WE LOVE WHAT WE DO" img-id="services-img" />
+        <Banner :title="servicesPage.bannerText" :img-id="servicesPage.imageId" />
         <div id="services-panel-wrapper" class="container">
           <Services-panel
-            v-for="service in services" 
+            v-for="service in servicesPage.servicesList" 
+            :key="service.id"
             :id="service.id" 
-            :key="service.key" 
             :name="service.name" 
             :image-src="service.imageSrc" 
             :text="service.text"
@@ -32,7 +32,7 @@ export default {
   name: "Services",
   data() {
     return {
-      services: content.services
+      servicesPage: content.page.services
     };
   }
 };

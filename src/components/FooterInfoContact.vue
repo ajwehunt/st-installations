@@ -31,8 +31,8 @@ export default {
   data() {
     return {
       content,
-      contactInfo: content.footer.contact,
-      emailContent: content.footer.contact.email
+      contactInfo: content.component.footer.contact,
+      emailContent: content.component.footer.contact.email
     };
   }
 };

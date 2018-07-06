@@ -1,7 +1,7 @@
 <template>
   <transition name="fade" mode="out-in">
     <div>
-      <Banner title="LET'S GET IN TOUCH" img-id="testimonials-img" />
+      <Banner :title="contactPage.bannerText" :img-id="contactPage.imageId" />
       <section class="contact-body">
         <div class="container">
           <div class="row">
@@ -43,12 +43,18 @@
 
 <script>
 import Banner from "@/components/Banner.vue";
+import content from "@/services/content.js";
 
 export default {
   components: {
     Banner
   },
-  name: "Contact"
+  name: "Contact",
+  data() {
+    return {
+      contactPage: content.page.contact
+    };
+  }
 };
 </script>
 
