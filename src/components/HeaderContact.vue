@@ -28,6 +28,7 @@ export default {
   height: 48px;
   width: 100%;
   background: black;
+  z-index: 6;
 
   #header-contact {
     display: flex;
@@ -41,11 +42,12 @@ export default {
 
     a {
       display: flex;
-      margin-bottom: 7px;
+      margin-bottom: 14px;
 
       h2 {
         color: #fff;
         font-size: 18px;
+        font-weight: 600;
 
         &:first-child {
           margin-right: 12px;

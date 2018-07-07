@@ -1,7 +1,7 @@
 <template>
-  <div class="navbar-wrap">
-    <div class="navbar-main">
-      <router-link to="/"><img src="../assets/logo.png" alt="Strong Tower Installations"></router-link>
+  <div id="header-nav-wrap">
+    <div id="header-nav-main">
+    <router-link to="/"><img src="../assets/logo.png" alt="Strong Tower Installations"></router-link>
       <!-- <button class='hamburger-btn' type="button" name="menu" ng-click="toggleNav()">
         <i class="fa fa-bars" aria-hidden="true"></i>
       </button> -->
@@ -22,13 +22,14 @@ export default {
 </script>
 
 <style lang="less">
-.navbar-wrap {
+#header-nav-wrap {
   background: #fff;
-  z-index: 5;
+  z-index: 6;
   box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.3);
+  top: 48px;
 }
 
-.navbar-main {
+#header-nav-main {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
@@ -41,19 +42,23 @@ export default {
   transition-delay: 50ms;
 
   img {
+    position: absolute;
+    bottom: 20px;
     height: 150px;
+    z-index: 10;
     transition: 0.08s;
     transition-delay: 50ms;
     cursor: pointer;
   }
 }
 
-.sticky {
-  .navbar-main {
+.sticky-both {
+  #header-nav-main {
     padding-bottom: 0px;
 
     img {
-      height: 44px;
+      height: 46px;
+      bottom: 5px;
     }
   }
 }

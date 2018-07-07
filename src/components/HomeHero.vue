@@ -101,7 +101,7 @@ export default {
   top: 170px;
   left: 0;
   right: 0;
-  z-index: 10;
+  z-index: 2;
 
   h2 {
     font-size: 40px;
