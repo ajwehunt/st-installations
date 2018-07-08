@@ -1,8 +1,8 @@
 <template>
   <div id="header-contact-wrap">
     <div id="header-contact">
-      <a :href="`tel:${content.phone}`">
-        <h2>CALL US:</h2><h2>{{ content.phone }}</h2>
+      <a :href="`tel:${info.phone}`">
+        <h2>CALL US:</h2><h2>{{ info.phone }}</h2>
       </a>
     </div>
   </div>
@@ -15,7 +15,7 @@ export default {
   name: "HeaderContact",
   data() {
     return {
-      content
+      info: content.info
     };
   }
 };
@@ -51,6 +51,7 @@ export default {
 
         &:first-child {
           margin-right: 12px;
+          user-select: none;
         }
 
         &:last-child {

@@ -1,8 +1,8 @@
 <template>
   <section id="home-hero">
     <div id="hero-text-box">
-      <h2>Welcome to</h2>
-      <h2>StrongTower Installations</h2>
+      <h2>{{ heroText.partOne }}</h2>
+      <h2>{{ heroText.partTwo }}</h2>
     </div>
     <div id="home-hero-changer">
       <div id="hero-filter"></div>
@@ -19,10 +19,13 @@
 </template>
 
 <script>
+import content from "@/services/content.js";
+
 export default {
   name: "HomeHero",
   data() {
     return {
+      heroText: content.page.home.heroText,
       images: [],
       mainImageSrc: require("../assets/stocks/relaxingguy.jpg")
     };
@@ -108,6 +111,7 @@ export default {
     font-weight: 400;
     line-height: 50px;
     color: #fff;
+    user-select: none;
   }
 }
 

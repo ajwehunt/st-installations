@@ -12,20 +12,20 @@
         </div>
       </div>
     </div> -->
-    <div class="fb-comments"></div>
+    <!-- <div class="fb-comments"></div> -->
   </section>
 </template>
 
 <script>
 export default {
-  name: "HomeSocial"
-  // created() {
-  //   function fbParse() {
-  //     setTimeout(() => {
-  //       window.FB.XFBML.parse();
-  //     }, 0);
-  //   }
-  //   fbParse();
-  // }
+  name: "HomeSocial",
+  created() {
+    function loadFacebook() {
+      setTimeout(() => {
+        window.FB.XFBML.parse();
+      }, 0);
+    }
+    loadFacebook();
+  }
 };
 </script>

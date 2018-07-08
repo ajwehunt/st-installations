@@ -1,8 +1,15 @@
 export default {
-  email: "jesse@strongtowersecurity.com",
-  phone: "(480) 580-4495",
+  info: {
+    email: "jesse@strongtowersecurity.com",
+    phone: "(480) 580-4495"
+  },
   page: {
     home: {
+      heroText: {
+        partOne: "Welcome to",
+        partTwo: "StrongTower Installations"
+      },
+      servicesHeaderText: "OUR SERVICES",
       servicesSummary:
         "Whether you are renting, buying or building a home in Arizona, we can help! From troubleshooting and salvaging old systems to bringing a new dream to reality, our crew specializes in solving the puzzle in the most respectful and cost-efficient way. We do what’s right for each customer, every time."
     },
@@ -78,7 +85,19 @@ export default {
         }
       ]
     },
-    about: {},
+    about: {
+      bannerText: "WE ARE STRONG TOWER",
+      imageId: "about-img",
+      headerText: "OUR MISSION",
+      quote: "Technology is our passion, customization is our specialty.",
+      summary: {
+        partOne:
+          "Hello, we are Strong Tower Installations. We are a group of highly talented individuals specialized in creating innovative home theatre and security solutions. Our mission is to stay true to the nature of quality sound and security as an evidence-driven methodology to create user-centered products while taking advantage of our technical capabilities.",
+        partTwo:
+          "We’re locally owned & operated out of Gilbert, Arizona. Our founders live and work in Arizona. When you call us, you’ll get a live person. Not able to call? No worries, we’ve got 24/7 live SMS (text) support too."
+      },
+      teamHeaderText: "OUR TEAM"
+    },
     testimonials: {
       bannerText: "WHAT PEOPLE ARE SAYING",
       imageId: "testimonials-img"
@@ -98,7 +117,7 @@ export default {
         email: {
           subject: "Hello Strong Tower Installations",
           intro: "Hello Strong Tower Installations,",
-          body: `Please contact me. I’m interested in learning more.`,
+          body: "Please contact me. I’m interested in learning more.",
           outro: "Thank you,"
         }
       },

@@ -49,6 +49,7 @@ export default {
     transition: 0.08s;
     transition-delay: 50ms;
     cursor: pointer;
+    user-select: none;
   }
 }
 

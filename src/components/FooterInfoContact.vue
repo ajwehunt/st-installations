@@ -8,15 +8,15 @@
       </div> -->
       <div>
           <i class="fa fa-phone" aria-hidden="true"></i>
-          <a :href="`tel:${content.phone}`">{{ content.phone }}</a>
+          <a :href="`tel:${info.phone}`">{{ info.phone }}</a>
       </div>
       <div>
           <i class="fa fa-envelope" aria-hidden="true"></i>
-          <a :href="`mailto:${content.email}`+
+          <a :href="`mailto:${info.email}`+
             `?subject=${emailContent.subject}&amp;`+
             `body=${emailContent.intro}%0A%0A${emailContent.body}%0A%0A${emailContent.outro}`"
           >
-            {{ content.email }}
+            {{ info.email }}
           </a>
       </div>
     </div>
@@ -30,7 +30,7 @@ export default {
   name: "FooterInfoContact",
   data() {
     return {
-      content,
+      info: content.info,
       contactInfo: content.component.footer.contact,
       emailContent: content.component.footer.contact.email
     };
