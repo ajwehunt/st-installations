@@ -1,5 +1,5 @@
 <template>
-  <div class="service-panel">
+  <section class="service-panel">
     <div class="col-sm-1">
     </div>
     <div class="col-sm-6">
@@ -11,7 +11,7 @@
     </div>
     <div class="col-sm-1">
     </div>
-  </div>
+  </section>
 </template>
 
 <script>

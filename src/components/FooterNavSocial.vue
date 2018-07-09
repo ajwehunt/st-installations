@@ -1,56 +1,74 @@
 <template>
   <ul id="footer-nav-social">
     <li>
-      <a href="https://www.facebook.com/strongtoweraz/" target="_blank">
+      <a :href="info.fbLink" target="_blank">
         <i class="fa fa-facebook" aria-hidden="true"/>
       </a>
     </li>
-    <!-- <li>
-      <div class="fb-like" data-href="https://www.facebook.com/strongtowerinstallations/" data-layout="button" data-action="like" data-size="small" data-show-faces="false" data-share="true"></div>
-    </li> -->
+    <li>
+      <div class="fb-like"
+        :data-href="info.fbLink"
+        data-layout="button"
+        data-action="like"
+        data-size="small"
+        data-show-faces="false"
+        data-share="true"
+      ></div>
+    </li>
     <li id="thumbtack">
-      <a target="_blank" href="https://www.thumbtack.com/-Gilbert-AZ/service/2365712">
-        <img style="" src="https://static.thumbtackstatic.com/media/pages/profile/standard-widgets/pro-svg/inline.svg"/>
+      <a target="_blank" :href="info.thumbtackLink">
+        <img src="https://static.thumbtackstatic.com/media/pages/profile/standard-widgets/pro-svg/inline.svg"/>
       </a>
     </li>
   </ul>
 </template>
 
 <script>
+import content from "@/services/content.js";
+
 export default {
-  name: "FooterNavSocial"
+  name: "FooterNavSocial",
+  data() {
+    return {
+      info: content.info
+    };
+  }
 };
 </script>
 
-<style scoped>
-a {
-  color: #4a4a4a;
-  padding: 6px;
-  font-size: 19px;
-}
-
-img {
-  height: 20px;
-}
-
+<style lang="less">
 #footer-nav-social {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-}
 
-#thumbtack {
-  margin-top: 3px;
-}
+  li {
+    padding: 0 2px;
 
-.fa-facebook {
-  margin-top: 3px;
+    a {
+      color: #4a4a4a;
+      padding: 6px;
+      font-size: 21px;
+
+      .fa-facebook {
+        margin-top: 4px;
+        padding-right: 4px;
+      }
+    }
+  }
+
+  #thumbtack {
+    margin-top: 4px;
+
+    img {
+      height: 20px;
+    }
+  }
 }
 
 @media only screen and (min-width: 768px) {
   #footer-nav-social {
     justify-content: end;
-    align-items: flex-start;
     margin-top: 18px;
   }
 }

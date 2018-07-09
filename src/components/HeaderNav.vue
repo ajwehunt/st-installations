@@ -1,5 +1,5 @@
 <template>
-  <div id="header-nav-wrap">
+  <section id="header-nav-wrap">
     <div id="header-nav-main">
     <router-link to="/"><img src="../assets/logo.png" alt="Strong Tower Installations"></router-link>
       <!-- <button class='hamburger-btn' type="button" name="menu" ng-click="toggleNav()">
@@ -7,7 +7,7 @@
       </button> -->
       <NavLinks id="header-nav-links" />
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
@@ -39,7 +39,6 @@ export default {
   margin: 0 auto;
   padding: 10px;
   transition: 0.08s;
-  transition-delay: 50ms;
 
   img {
     position: absolute;
@@ -47,7 +46,6 @@ export default {
     height: 150px;
     z-index: 10;
     transition: 0.08s;
-    transition-delay: 50ms;
     cursor: pointer;
     user-select: none;
   }

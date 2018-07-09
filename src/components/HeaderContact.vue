@@ -1,11 +1,12 @@
 <template>
-  <div id="header-contact-wrap">
+  <section id="header-contact-wrap">
     <div id="header-contact">
       <a :href="`tel:${info.phone}`">
-        <h2>CALL US:</h2><h2>{{ info.phone }}</h2>
+        <h2>{{ header.callText }}</h2>
+        <h2>{{ info.phone }}</h2>
       </a>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
@@ -15,7 +16,8 @@ export default {
   name: "HeaderContact",
   data() {
     return {
-      info: content.info
+      info: content.info,
+      header: content.component.header
     };
   }
 };

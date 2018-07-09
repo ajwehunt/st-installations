@@ -15,6 +15,7 @@ export default {
 
 <style>
 #footer-nav-links {
+  font-weight: 600;
   flex-wrap: wrap;
   justify-content: space-evenly;
   max-width: 350px;

@@ -54,15 +54,15 @@ export default {
   .container {
     padding: 0;
     border-bottom: 2px solid #f4f4f4;
-  }
 
-  .row {
-    margin: 30px 14% 60px;
-  }
+    .row {
+      margin: 30px 14% 60px;
 
-  img {
-    height: 32px;
-    width: auto;
+      img {
+        height: 32px;
+        width: auto;
+      }
+    }
   }
 
   .VueCarousel-slide {

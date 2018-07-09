@@ -1,25 +1,25 @@
 <template>
-    <section class="container">
-      <div class="row">
-        <h1 class="section-title">{{ home.servicesHeaderText }}</h1>
-        <hr class="section-hr">
-        <div class="col-sm-1"></div>
-        <div id="home-services-panel" class="col-sm-10">
-          <h2>{{ home.servicesSummary }}</h2>
-          <div id="home-services-grid">
-             <HomeServicesLink
-                v-for="service in servicesPage.servicesList"
-                tag="div"
-                :key="service.id"
-                :serviceId="service.id"
-                :serviceName="service.name"
-                :summary="service.summmary"
-                :faIcon="service.faIcon" 
-              />
-          </div>
+  <section class="container">
+    <div class="row">
+      <h1 class="section-title">{{ home.servicesHeaderText }}</h1>
+      <hr class="section-hr">
+      <div class="col-sm-1"></div>
+      <div id="home-services-panel" class="col-sm-10">
+        <h2>{{ home.servicesSummary }}</h2>
+        <div id="home-services-grid">
+            <HomeServicesLink
+              v-for="service in servicesPage.servicesList"
+              tag="div"
+              :key="service.id"
+              :serviceId="service.id"
+              :serviceName="service.name"
+              :summary="service.summmary"
+              :faIcon="service.faIcon" 
+            />
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 </template>
 
 <script>

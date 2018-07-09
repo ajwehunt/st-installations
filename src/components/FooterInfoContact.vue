@@ -1,5 +1,5 @@
 <template>
-  <div class="col-sm-4 col-sm-offset-1">
+  <section class="col-sm-4 col-sm-offset-1">
     <h2>{{ contactInfo.headerText }}</h2>
     <div id="footer-info-contact">
       <!-- <div>
@@ -20,7 +20,7 @@
           </a>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>

@@ -1,7 +1,9 @@
 export default {
   info: {
     email: "jesse@strongtowersecurity.com",
-    phone: "(480) 580-4495"
+    phone: "(480) 580-4495",
+    fbLink: "https://www.facebook.com/strongtowerinstallations/",
+    thumbtackLink: "https://www.thumbtack.com/-Gilbert-AZ/service/2365712"
   },
   page: {
     home: {
@@ -104,10 +106,14 @@ export default {
     },
     contact: {
       bannerText: "LET'S GET IN TOUCH",
-      imageId: "testimonials-img"
+      headerText: "YOUR MESSAGE",
+      imageId: "contact-img"
     }
   },
   component: {
+    header: {
+      callText: "CALL US:"
+    },
     footer: {
       contact: {
         headerText: "CONTACT",
