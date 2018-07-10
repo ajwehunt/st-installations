@@ -1,7 +1,7 @@
 <template>
   <transition name="fade" mode="out-in">
     <div>
-      <Banner :title="contactPage.bannerText" :img-id="contactPage.imageId" />
+      <Banner :data="contact.banner" />
       <ContactForm />
     </div>
   </transition>
@@ -20,7 +20,7 @@ export default {
   name: "Contact",
   data() {
     return {
-      contactPage: content.page.contact
+      contact: content.page.contact
     };
   }
 };

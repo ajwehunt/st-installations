@@ -1,7 +1,7 @@
 <template>
   <transition name="fade" mode="out-in">
     <div>
-      <Banner :title="testimonialsPage.bannerText" :img-id="testimonialsPage.imageId"/>
+      <Banner :data="testimonials.banner" />
     </div>
   </transition>
 </template>
@@ -17,7 +17,7 @@ export default {
   name: "Testimonials",
   data() {
     return {
-      testimonialsPage: content.page.testimonials
+      testimonials: content.page.testimonials
     };
   }
 };

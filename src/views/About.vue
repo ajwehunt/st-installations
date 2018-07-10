@@ -1,29 +1,29 @@
 <template>
   <transition name="fade" mode="out-in">
     <div>
-      <Banner :title="about.bannerText" :img-id="about.imageId" />
-      <section class="services">
+      <Banner :data="about.banner" />
+      <section>
         <div class="container">
           <div class="row">
-            <h1 class="section-title">{{ about.headerText }}</h1>
+            <h1 class="section-title">{{ mission.header }}</h1>
             <hr class="section-hr">
           </div>
           <div class="row">
             <div id="about-quote" class="col-sm-offset-1 col-md-2">
-              <p>"{{ about.quote }}"</p>
+              <p>"{{ mission.quote }}"</p>
             </div>
             <div id="about-summary" class="col-sm-6 col-sm-offset-1">
-              <p>{{ aboutSummary.partOne }}</p>
-              <p>{{ aboutSummary.partTwo }}</p>
-              <p>{{ about.quote }}</p>
+              <p>{{ mission.summary.partOne }}</p>
+              <p>{{ mission.summary.partTwo }}</p>
+              <p>{{ mission.quote }}</p>
             </div>
           </div>
         </div>
       </section>
-      <section class="services">
+      <section>
         <div class="container">
           <div class="row">
-            <h1 class="section-title">{{ about.teamHeaderText }}</h1>
+            <h1 class="section-title">{{ team.header }}</h1>
             <hr class="section-hr">
             <div class="col-sm-1"></div>
             <div id="about-team-image" class="col-sm-10">
@@ -37,8 +37,8 @@
 </template>
 
 <script>
-import Banner from "@/components/Banner.vue";
 import content from "@/services/content.js";
+import Banner from "@/components/Banner.vue";
 
 export default {
   components: {
@@ -48,7 +48,8 @@ export default {
   data() {
     return {
       about: content.page.about,
-      aboutSummary: content.page.about.summary
+      mission: content.page.about.mission,
+      team: content.page.about.team
     };
   }
 };

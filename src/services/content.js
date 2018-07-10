@@ -16,8 +16,12 @@ export default {
         "Whether you are renting, buying or building a home in Arizona, we can help! From troubleshooting and salvaging old systems to bringing a new dream to reality, our crew specializes in solving the puzzle in the most respectful and cost-efficient way. We do what’s right for each customer, every time."
     },
     services: {
-      bannerText: "WE LOVE WHAT WE DO",
-      imageId: "services-img",
+      banner: {
+        text: "WE LOVE WHAT WE DO",
+        id: "services-img",
+        src: "",
+        alt: ""
+      },
       servicesList: [
         {
           id: "SecuritySystems",
@@ -88,26 +92,43 @@ export default {
       ]
     },
     about: {
-      bannerText: "WE ARE STRONG TOWER",
-      imageId: "about-img",
-      headerText: "OUR MISSION",
-      quote: "Technology is our passion, customization is our specialty.",
-      summary: {
-        partOne:
-          "Hello, we are Strong Tower Installations. We are a group of highly talented individuals specialized in creating innovative home theatre and security solutions. Our mission is to stay true to the nature of quality sound and security as an evidence-driven methodology to create user-centered products while taking advantage of our technical capabilities.",
-        partTwo:
-          "We’re locally owned & operated out of Gilbert, Arizona. Our founders live and work in Arizona. When you call us, you’ll get a live person. Not able to call? No worries, we’ve got 24/7 live SMS (text) support too."
+      banner: {
+        text: "WE ARE STRONG TOWER",
+        id: "about-img",
+        src: "",
+        alt: ""
       },
-      teamHeaderText: "OUR TEAM"
+      mission: {
+        header: "OUR MISSION",
+        quote: "Technology is our passion, customization is our specialty.",
+        summary: {
+          partOne:
+            "Hello, we are Strong Tower Installations. We are a group of highly talented individuals specialized in creating innovative home theatre and security solutions. Our mission is to stay true to the nature of quality sound and security as an evidence-driven methodology to create user-centered products while taking advantage of our technical capabilities.",
+          partTwo:
+            "We’re locally owned & operated out of Gilbert, Arizona. Our founders live and work in Arizona. When you call us, you’ll get a live person. Not able to call? No worries, we’ve got 24/7 live SMS (text) support too."
+        }
+      },
+      team: {
+        header: "OUR TEAM"
+      }
     },
     testimonials: {
-      bannerText: "WHAT PEOPLE ARE SAYING",
-      imageId: "testimonials-img"
+      banner: {
+        text: "WHAT PEOPLE ARE SAYING",
+        id: "testimonials-img",
+        src: "",
+        alt: ""
+      },
+      headerText: "TESTIMONIALS"
     },
     contact: {
-      bannerText: "LET'S GET IN TOUCH",
-      headerText: "YOUR MESSAGE",
-      imageId: "contact-img"
+      banner: {
+        text: "LET'S GET IN TOUCH",
+        id: "contact-img",
+        src: "",
+        alt: ""
+      },
+      headerText: "YOUR MESSAGE"
     }
   },
   component: {

@@ -1,5 +1,5 @@
 <template>
-  <section class="services">
+  <section>
     <!-- <div class="container">
       <div class="row">
         <h2 class="section-title">SOCIAL MEDIA</h2>
@@ -12,7 +12,6 @@
         </div>
       </div>
     </div> -->
-    <!-- <div class="fb-comments"></div> -->
   </section>
 </template>
 

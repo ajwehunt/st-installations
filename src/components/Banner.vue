@@ -1,13 +1,14 @@
 <template>
-  <section :id="imgId" class='banner'>
-    <div id="banner-filter"></div>
-    <h1>{{ title }}</h1>
+  <section class='banner'>
+    <img :id="data.id" :src="data.src" :alt="data.alt" />
+    <div class="banner-filter"></div>
+    <h1>{{ data.text }}</h1>
   </section>
 </template>
 
 <script>
 export default {
-  props: ["title", "imgId"],
+  props: ["data"],
   name: "Banner"
 };
 </script>
@@ -19,8 +20,6 @@ export default {
   align-items: center;
   height: 400px;
   text-align: center;
-  background-size: cover;
-  background-position: center;
 }
 
 #services-img {
@@ -36,7 +35,7 @@ export default {
   background-image: url(../assets/stocks/hometheatre_1.jpg);
 }
 
-#banner-filter {
+.banner-filter {
   position: absolute;
   top: 0;
   bottom: 0;

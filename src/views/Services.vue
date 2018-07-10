@@ -1,10 +1,10 @@
 <template>
     <transition name="fade" mode="out-in">
       <div>
-        <Banner :title="servicesPage.bannerText" :img-id="servicesPage.imageId" />
+        <Banner :data="services.banner" />
         <div id="services-panel-wrapper" class="container">
           <Services-panel
-            v-for="service in servicesPage.servicesList" 
+            v-for="service in services.servicesList" 
             :key="service.id"
             :id="service.id" 
             :name="service.name" 
@@ -18,10 +18,10 @@
 </template>
 
 <script>
+import content from "@/services/content.js";
 import Banner from "@/components/Banner.vue";
 import ServicesPanel from "@/components/ServicesPanel.vue";
 import Partners from "@/components/Partners.vue";
-import content from "@/services/content.js";
 
 export default {
   components: {
@@ -32,7 +32,7 @@ export default {
   name: "Services",
   data() {
     return {
-      servicesPage: content.page.services
+      services: content.page.services
     };
   }
 };
