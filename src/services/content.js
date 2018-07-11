@@ -19,8 +19,10 @@ export default {
       banner: {
         text: "WE LOVE WHAT WE DO",
         id: "services-img",
-        src: "",
-        alt: ""
+        image: {
+          src: require("../assets/banners/main_services.jpg"),
+          alt: ""
+        }
       },
       servicesList: [
         {
@@ -30,8 +32,10 @@ export default {
             "Home security should be a high priority for any home owner whether you are married, a single parent, or simply need to add an appropriate alarm system for your family’s elders.",
           text:
             "Whether it be for your home, business, rental, or personal relative, we can customize the best form of security to get you the peace of mind you are looking for.  We install reliable, user-friendly equipment and are well versed in both wired and wireless systems. Over 10 years and counting, we have installed numerous systems and guarantee our work with 24/7 technical support; Your security is our top priority.",
-          imageSrc: require("../assets/stocks/security_monitoring_app.jpg"),
-          imageAlt: "Security Monitoring App",
+          image: {
+            src: require("../assets/stocks/security_monitoring_app.jpg"),
+            alt: "Security Monitoring App"
+          },
           faIcon: "fa-shield"
         },
         {
@@ -41,8 +45,10 @@ export default {
             "The increase in crime rates makes it necessary that each one of us take precautions of our own to keep our home and families safe. The easy and affordable access to technology has brought cameras and surveillance systems within reach for everyone.",
           text:
             "Innovation in the security camera industry has put a high quality picture in an affordable reach to everyone.  From a single camera to watch over your front porch to full perimeter and interior coverage, we will find the perfect balance for your home or business.",
-          imageSrc: require("../assets/stocks/cameras_sensors.jpg"),
-          imageAlt: "Cameras and Sensors",
+          image: {
+            src: require("../assets/stocks/cameras_sensors.jpg"),
+            alt: "Cameras and Sensors"
+          },
           faIcon: "fa-video-camera"
         },
         {
@@ -52,8 +58,10 @@ export default {
             "There are many variables that can make or break or theater or media room. We can design rooms based on acoustics, aesthetics, and audio video needs. We work with architects and interior designers to make sure that every detail is perfect.",
           text:
             "This has become our most favorite work!  Using top notch equipment at a surprisingly affordable price, we love the “Wow!” our customers say after hearing their new system for the first time.  We install Surround Sound, multi-zone systems that not only consolidate all your devices, they also easily stream music from your phone or tablet.",
-          imageSrc: require("../assets/stocks/hometheater_2.jpg"),
-          imageAlt: "Home Theatre",
+          image: {
+            src: require("../assets/stocks/hometheater_2.jpg"),
+            alt: "Home Theatre"
+          },
           faIcon: "fa-music"
         },
         {
@@ -63,8 +71,10 @@ export default {
             "We do it all: Wall-mount flat panel televisions, install speakers and wiring, install rack systems, install security cameras, conceal wiring inside the walls, set-up and calibrate televisions and sound systems, programming on custom remote controls, and much more…",
           text:
             "We do it all: Wall-mount flat panel televisions, install soundbars, conceal wires inside the wall, set up and calibrate televisions with sound systems and even program universal remotes.  No need to worry, we take extra precautions when working with or around your prized television.",
-          imageSrc: require("../assets/stocks/tvmount_install.jpg"),
-          imageAlt: "TV Mount Install",
+          image: {
+            src: require("../assets/stocks/tvmount_install.jpg"),
+            alt: "TV Mount Install"
+          },
           faIcon: "fa-television"
         },
         {
@@ -74,8 +84,10 @@ export default {
             "Relying on a single router is like asking a loud speaker in your living room to provide great sound throughout your home. It’s simple physics: WiFi waves don’t go through walls well and have an even harder time climbing stairs. Ever tried to stream a show from your bedroom when your router’s in the office downstairs? It’s a buffering nightmare.",
           text:
             "We are in a time where there’s nothing worse than trying to watch your favorite show or movie only to interrupted by it “buffering” every few minutes.  We are well aware of the headaches that troublesome wifi can cause and because of this, we have made it a priority to use the newest and most reliable products available.  Whether it is relocating the router by running hard lines to a more centralized location or installing a mesh network, we will find the solution that the cable guys aren’t willing to do.",
-          imageSrc: require("../assets/stocks/Home_automation_app_1.jpg"),
-          imageAlt: "Home Wifi System",
+          image: {
+            src: require("../assets/stocks/Home_automation_app_1.jpg"),
+            alt: "Home Wifi System"
+          },
           faIcon: "fa-wifi"
         },
         {
@@ -85,8 +97,10 @@ export default {
             "The term home automation means exactly that—automating the home and related household activities. This term encompasses a whole range of products and services ranging from the automation of lights in your home to the installation of a state-of-the art security system.",
           text:
             "The term home automation means exactly that—automating the home and related household activities. This term encompasses a whole range of products and services, such as, the automation of lights, thermostats and video streaming doorbells.",
-          imageSrc: require("../assets/stocks/home_automation_app_2.jpg"),
-          imageAlt: "Home Automation app",
+          image: {
+            src: require("../assets/stocks/home_automation_app_2.jpg"),
+            alt: "Home Automation app"
+          },
           faIcon: "fa-magic"
         }
       ]
@@ -95,8 +109,10 @@ export default {
       banner: {
         text: "WE ARE STRONG TOWER",
         id: "about-img",
-        src: "",
-        alt: ""
+        image: {
+          src: require("../assets/stocks/hometheatre_1.jpg"),
+          alt: ""
+        }
       },
       mission: {
         header: "OUR MISSION",
@@ -109,15 +125,21 @@ export default {
         }
       },
       team: {
-        header: "OUR TEAM"
+        header: "OUR TEAM",
+        image: {
+          src: require("../assets/strongtower_aboutus.jpg"),
+          alt: "Three handsome gentlemen"
+        }
       }
     },
     testimonials: {
       banner: {
         text: "WHAT PEOPLE ARE SAYING",
         id: "testimonials-img",
-        src: "",
-        alt: ""
+        image: {
+          src: require("../assets/stocks/hometheatre_1.jpg"),
+          alt: ""
+        }
       },
       headerText: "TESTIMONIALS"
     },
@@ -125,15 +147,21 @@ export default {
       banner: {
         text: "LET'S GET IN TOUCH",
         id: "contact-img",
-        src: "",
-        alt: ""
+        image: {
+          src: require("../assets/stocks/hometheatre_1.jpg"),
+          alt: ""
+        }
       },
       headerText: "YOUR MESSAGE"
     }
   },
   component: {
     header: {
-      callText: "CALL US:"
+      callText: "CALL US:",
+      logo: {
+        src: require("../assets/logo.png"),
+        alt: "Strong Tower Installations"
+      }
     },
     footer: {
       contact: {

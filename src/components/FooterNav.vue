@@ -1,11 +1,14 @@
 <template>
-  <section id="footer-nav" class="container">
+  <div id="footer-nav" class="container">
     <div class="row">
       <div class="col-sm-1"/>
       <div id="footer-nav-wrapper" class="col-sm-10">
-        <div id="footer-logo-wrapper" to="/">
+        <div id="footer-logo-wrapper">
           <router-link to="/">
-              <img id='footer-logo' :src="logo" alt="Strong Tower Installations"/>
+            <img id='footer-logo'
+              :src="logo.src"
+              :alt="logo.alt"
+            />
           </router-link>
         </div>
         <div id="footer-nav-links-wrapper">
@@ -15,10 +18,11 @@
       </div>
       <div class="col-sm-1"/>
     </div>
-  </section>
+  </div>
 </template>
 
 <script>
+import content from "@/services/content.js";
 import FooterNavLinks from "@/components/FooterNavLinks.vue";
 import FooterNavSocial from "@/components/FooterNavSocial.vue";
 
@@ -30,7 +34,7 @@ export default {
   name: "FooterNav",
   data() {
     return {
-      logo: require("../assets/logo.png")
+      logo: content.component.header.logo
     };
   }
 };

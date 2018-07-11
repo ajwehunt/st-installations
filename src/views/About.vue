@@ -1,6 +1,6 @@
 <template>
   <transition name="fade" mode="out-in">
-    <div>
+    <main>
       <Banner :data="about.banner" />
       <section>
         <div class="container">
@@ -27,12 +27,14 @@
             <hr class="section-hr">
             <div class="col-sm-1"></div>
             <div id="about-team-image" class="col-sm-10">
-              <img src="../assets/strongtower_aboutus.jpg" alt="Our Team">
+              <img :src="team.image.src"
+                :alt="team.image.alt"
+              />
             </div>
           </div>
         </div>
       </section>
-    </div>
+    </main>
   </transition>
 </template>
 

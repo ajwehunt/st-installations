@@ -1,16 +1,16 @@
 <template>
   <transition name="fade" mode="out-in">
-    <div>
+    <main>
       <Banner :data="contact.banner" />
       <ContactForm />
-    </div>
+    </main>
   </transition>
 </template>
 
 <script>
+import content from "@/services/content.js";
 import Banner from "@/components/Banner.vue";
 import ContactForm from "@/components/ContactForm.vue";
-import content from "@/services/content.js";
 
 export default {
   components: {

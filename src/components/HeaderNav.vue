@@ -1,23 +1,31 @@
 <template>
-  <section id="header-nav-wrap">
+  <div id="header-nav-wrap">
     <div id="header-nav-main">
-    <router-link to="/"><img src="../assets/logo.png" alt="Strong Tower Installations"></router-link>
+      <router-link to="/">
+        <img :src="logo.src" :alt="logo.alt">
+      </router-link>
       <!-- <button class='hamburger-btn' type="button" name="menu" ng-click="toggleNav()">
         <i class="fa fa-bars" aria-hidden="true"></i>
       </button> -->
       <NavLinks id="header-nav-links" />
     </div>
-  </section>
+  </div>
 </template>
 
 <script>
+import content from "@/services/content.js";
 import NavLinks from "@/components/NavLinks.vue";
 
 export default {
   components: {
     NavLinks
   },
-  name: "HeaderNav"
+  name: "HeaderNav",
+  data() {
+    return {
+      logo: content.component.header.logo
+    };
+  }
 };
 </script>
 

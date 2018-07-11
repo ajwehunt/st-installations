@@ -1,19 +1,15 @@
 <template>
     <transition name="fade" mode="out-in">
-      <div>
+      <main>
         <Banner :data="services.banner" />
-        <div id="services-panel-wrapper" class="container">
-          <Services-panel
-            v-for="service in services.servicesList" 
+        <section id="services-panel-wrapper" class="container">
+          <Services-panel v-for="service in services.servicesList"
             :key="service.id"
-            :id="service.id" 
-            :name="service.name" 
-            :image-src="service.imageSrc" 
-            :text="service.text"
+            :data="service"
           />
-        </div>
+        </section>
         <Partners/>
-      </div>
+      </main>
     </transition>
 </template>
 

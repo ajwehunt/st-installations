@@ -1,10 +1,10 @@
 <template>
   <section class="col-sm-4 col-sm-offset-1">
-    <h2>{{ contactInfo.headerText }}</h2>
-    <div id="footer-info-contact">
+    <h2>{{ contact.headerText }}</h2>
+    <address id="footer-info-contact">
       <!-- <div>
           <i class="fa fa-map-pin" aria-hidden="true"></i>
-          <a :href="contactInfo.googleMapLink" target='_blank'>{{ contactInfo.locationText }}</a>
+          <a :href="contact.googleMapLink" target='_blank'>{{ contact.locationText }}</a>
       </div> -->
       <div>
           <i class="fa fa-phone" aria-hidden="true"></i>
@@ -13,13 +13,13 @@
       <div>
           <i class="fa fa-envelope" aria-hidden="true"></i>
           <a :href="`mailto:${info.email}`+
-            `?subject=${emailContent.subject}&amp;`+
-            `body=${emailContent.intro}%0A%0A${emailContent.body}%0A%0A${emailContent.outro}`"
+            `?subject=${email.subject}&amp;`+
+            `body=${email.intro}%0A%0A${email.body}%0A%0A${email.outro}`"
           >
             {{ info.email }}
           </a>
       </div>
-    </div>
+    </address>
   </section>
 </template>
 
@@ -31,8 +31,8 @@ export default {
   data() {
     return {
       info: content.info,
-      contactInfo: content.component.footer.contact,
-      emailContent: content.component.footer.contact.email
+      contact: content.component.footer.contact,
+      email: content.component.footer.contact.email
     };
   }
 };

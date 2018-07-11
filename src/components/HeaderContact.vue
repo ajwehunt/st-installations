@@ -1,12 +1,12 @@
 <template>
-  <section id="header-contact-wrap">
-    <div id="header-contact">
+  <div id="header-contact-wrap">
+    <address id="header-contact">
       <a :href="`tel:${info.phone}`">
         <h2>{{ header.callText }}</h2>
         <h2>{{ info.phone }}</h2>
       </a>
-    </div>
-  </section>
+    </address>
+  </div>
 </template>
 
 <script>

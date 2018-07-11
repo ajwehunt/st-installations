@@ -1,13 +1,16 @@
 <template>
-  <section class="service-panel">
+  <section class="service-panel" :id="data.id">
     <div class="col-sm-1">
     </div>
     <div class="col-sm-6">
-      <img class="img-responsive" :src="imageSrc" :alt="imageAlt">
+      <img class="img-responsive"
+        :src="data.image.src"
+        :alt="data.image.alt"
+      />
     </div>
     <div class="col-sm-4">
-      <h1>{{ name }}</h1>
-      <p>{{ text }}</p>
+      <h1>{{ data.name }}</h1>
+      <p>{{ data.text }}</p>
     </div>
     <div class="col-sm-1">
     </div>
@@ -16,7 +19,7 @@
 
 <script>
 export default {
-  props: ["name", "text", "imageSrc", "imageAlt"],
+  props: ["data"],
   name: "ServicesPanel"
 };
 </script>

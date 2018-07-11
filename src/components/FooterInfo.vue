@@ -2,8 +2,8 @@
   <section id="footer-info" class="container">
     <div class="row">
       <div class="col-sm-5 col-sm-offset-1">
-        <h2>{{ aboutContent.headerText }}</h2>
-        <p>{{ aboutContent.summary }}</p>
+        <h2>{{ about.headerText }}</h2>
+        <p>{{ about.summary }}</p>
       </div>
       <FooterInfoContact/>
     </div>
@@ -11,8 +11,8 @@
 </template>
 
 <script>
-import FooterInfoContact from "@/components/FooterInfoContact.vue";
 import content from "@/services/content.js";
+import FooterInfoContact from "@/components/FooterInfoContact.vue";
 
 export default {
   components: {
@@ -21,7 +21,7 @@ export default {
   name: "FooterInfo",
   data() {
     return {
-      aboutContent: content.component.footer.about
+      about: content.component.footer.about
     };
   }
 };

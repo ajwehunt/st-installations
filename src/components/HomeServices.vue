@@ -7,14 +7,9 @@
       <div id="home-services-panel" class="col-sm-10">
         <h2>{{ home.servicesSummary }}</h2>
         <div id="home-services-grid">
-            <HomeServicesLink
-              v-for="service in servicesPage.servicesList"
-              tag="div"
+            <HomeServicesLink v-for="service in services.servicesList"
               :key="service.id"
-              :serviceId="service.id"
-              :serviceName="service.name"
-              :summary="service.summmary"
-              :faIcon="service.faIcon" 
+              :data="service"
             />
         </div>
       </div>
@@ -23,8 +18,8 @@
 </template>
 
 <script>
-import HomeServicesLink from "@/components/HomeServicesLink.vue";
 import content from "@/services/content.js";
+import HomeServicesLink from "@/components/HomeServicesLink.vue";
 
 export default {
   components: {
@@ -34,7 +29,7 @@ export default {
   data() {
     return {
       home: content.page.home,
-      servicesPage: content.page.services
+      services: content.page.services
     };
   }
 };

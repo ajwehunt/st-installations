@@ -1,19 +1,19 @@
 <template>
-  <router-link
+  <router-link :id="data.id"
     class="col-md-3 service-title"
-    :to="`${$router.options.routes[1].path}#${serviceId}`"
+    :to="`${$router.options.routes[1].path}#${data.id}`"
     tag="div"
   >
-    <i :class="faIcon" class="fa" aria-hidden="true"></i>
-    <h3>{{ serviceName }}</h3>
-    <!-- <p>{{ summary }}</p> -->
+    <i :class="data.faIcon" class="fa" aria-hidden="true"></i>
+    <h3>{{ data.name }}</h3>
+    <!-- <p>{{ data.summary }}</p> -->
     <!-- <router-link to="/services#SecuritySystems" tag="button">LEARN MORE</router-link> -->
   </router-link>
 </template>
 
 <script>
 export default {
-  props: ["serviceId", "serviceName", "summary", "faIcon"],
+  props: ["data"],
   name: "HomeServicesLink"
 };
 </script>

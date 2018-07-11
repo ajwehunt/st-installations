@@ -1,8 +1,8 @@
 <template>
   <transition name="fade" mode="out-in">
-    <div>
+    <main>
       <Banner :data="testimonials.banner" />
-    </div>
+    </main>
   </transition>
 </template>
 

@@ -1,15 +1,17 @@
 <template>
-  <ul class="navigation">
-      <router-link
-        v-for="route in $router.options.routes"
-        v-if="!route.meta.hidden"
-        tag="li"
-        :key="route.path"
-        :to="route"
-      >
-        {{route.name}}
-      </router-link>
-  </ul>
+  <nav>
+    <ul class="navigation">
+        <router-link
+          v-for="route in $router.options.routes"
+          v-if="!route.meta.hidden"
+          tag="li"
+          :key="route.path"
+          :to="route"
+        >
+          {{route.name}}
+        </router-link>
+    </ul>
+  </nav>
 </template>
 
 <script>

@@ -32,8 +32,8 @@
 </template>
 
 <script>
-import { Carousel, Slide } from "vue-carousel";
 import content from "@/services/content.js";
+import { Carousel, Slide } from "vue-carousel";
 
 export default {
   components: {

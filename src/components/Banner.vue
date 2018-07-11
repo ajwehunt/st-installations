@@ -1,6 +1,9 @@
 <template>
   <section class='banner'>
-    <img :id="data.id" :src="data.src" :alt="data.alt" />
+    <img :id="data.id"
+      :src="data.image.src"
+      :alt="data.image.alt"
+    />
     <div class="banner-filter"></div>
     <h1>{{ data.text }}</h1>
   </section>
@@ -13,26 +16,13 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="less" scoped>
 .banner {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 400px;
   text-align: center;
-}
-
-#services-img {
-  background-image: url(../assets/banners/main_services.jpg);
-}
-#contact-img {
-  background-image: url(../assets/stocks/hometheatre_1.jpg);
-}
-#about-img {
-  background-image: url(../assets/stocks/hometheatre_1.jpg);
-}
-#testimonials-img {
-  background-image: url(../assets/stocks/hometheatre_1.jpg);
 }
 
 .banner-filter {
