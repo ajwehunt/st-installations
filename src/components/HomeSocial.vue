@@ -17,14 +17,14 @@
 
 <script>
 export default {
-  name: "HomeSocial",
-  created() {
-    function loadFacebook() {
-      setTimeout(() => {
-        window.FB.XFBML.parse();
-      }, 0);
-    }
-    loadFacebook();
-  }
+  name: "HomeSocial"
+  // created() {
+  //   function loadFacebook() {
+  //     setTimeout(() => {
+  //       window.FB.XFBML.parse();
+  //     }, 0);
+  //   }
+  //   loadFacebook();
+  // }
 };
 </script>

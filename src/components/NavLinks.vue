@@ -24,6 +24,8 @@ export default {
 .navigation {
   display: flex;
   align-items: baseline;
+  flex-wrap: wrap;
+  justify-content: center;
   user-select: none;
 
   li {

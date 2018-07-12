@@ -64,7 +64,7 @@ export default {
 
 } */
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 460px) {
   #home-services-grid {
     grid-template-columns: 1fr 1fr;
     grid-gap: 0px 60px;

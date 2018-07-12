@@ -19,7 +19,7 @@ export default {
   flex-wrap: wrap;
   justify-content: space-evenly;
   max-width: 350px;
-  margin: 32px auto;
+  margin: 24px auto 32px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -31,7 +31,7 @@ export default {
   }
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1050px) {
   #footer-nav-links {
     max-width: 800px;
   }
