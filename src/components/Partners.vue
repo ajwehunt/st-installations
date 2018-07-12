@@ -5,26 +5,16 @@
         <h2 class="section-title">{{ partners.headerText }}</h2>
         <hr class="section-hr">
         <carousel
-          :autoplay=true
-          :navigationEnabled=true
-          :loop=true
+          :autoplay="true"
+          :navigationEnabled="true"
+          :loop="true"
           navigationNextLabel="<i class='fa fa-chevron-right' aria-hidden='true'></i>"
           navigationPrevLabel="<i class='fa fa-chevron-left' aria-hidden='true'></i>"
           :perPageCustom="[[0,1], [768, 2]]"
         >
-          <slide><div><img src="../assets/partners/2gig_logo.jpg" alt="2gig_logo"></div></slide>
-          <slide><div><img src="../assets/partners/alarmdotcom_logo.jpg" alt="alarmdotcom_logo"></div></slide>
-          <slide><div><img src="../assets/partners/cctvcore_logo.jpg" alt="cctvcore_logo"></div></slide>
-          <slide><div><img src="../assets/partners/denom_logo.jpg" alt="denom_logo"></div></slide>
-          <slide><div><img src="../assets/partners/elura_logo.jpg" alt="elura_logo"></div></slide>
-          <slide><div><img src="../assets/partners/honeywell_logo.jpg" alt="honeywell_logo"></div></slide>
-          <slide><div><img src="../assets/partners/jamo_logo.jpg" alt="jamo_logo"></div></slide>
-          <slide><div><img src="../assets/partners/mountainwest_logo.jpg" alt="mountainwest_logo"></div></slide>
-          <slide><div><img src="../assets/partners/onkyo_logo.jpg" alt="onkyo_logo"></div></slide>
-          <slide><div><img src="../assets/partners/ring_logo.jpg" alt="ring_logo"></div></slide>
-          <slide><div><img src="../assets/partners/samsung_logo.jpg" alt="samsung_logo"></div></slide>
-          <slide><div><img src="../assets/partners/wave_logo.jpg" alt="wave_logo"></div></slide>
-          <slide><div><img src="../assets/partners/yamaha_logo.jpg" alt="yamaha_logo"></div></slide>
+          <slide v-for="logo in partners.logos" :key="logo.alt">
+            <div><img :src="logo.src" :alt="logo.alt"></div>
+          </slide>
         </carousel>
       </div>
     </div>

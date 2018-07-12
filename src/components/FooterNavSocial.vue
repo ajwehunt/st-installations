@@ -41,6 +41,7 @@ export default {
   display: flex;
   align-items: flex-start;
   justify-content: center;
+  user-select: none;
 
   li {
     padding: 0 2px;

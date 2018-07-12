@@ -34,6 +34,7 @@ export default {
       },
       window.Modernizr.passiveeventlisteners ? { passive: true } : false
     );
+
     window.addEventListener("scroll", this.handleScroll);
   },
   destroyed() {
@@ -63,8 +64,6 @@ export default {
 </script>
 
 <style lang="less">
-// @import url('https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,700,900');
-
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -197,6 +196,10 @@ a:active,
 a:visited,
 a:focus {
   text-decoration: none;
+}
+
+img {
+  user-select: none;
 }
 
 li {

@@ -183,7 +183,61 @@ export default {
       }
     },
     partners: {
-      headerText: "OUR PARTNERS"
+      headerText: "OUR PARTNERS",
+      logos: [
+        {
+          src: require("../assets/partners/2gig_logo.jpg"),
+          alt: "2gig"
+        },
+        {
+          src: require("../assets/partners/alarmdotcom_logo.jpg"),
+          alt: "Alarmdotcom"
+        },
+        {
+          src: require("../assets/partners/cctvcore_logo.jpg"),
+          alt: "Cctvcore"
+        },
+        {
+          src: require("../assets/partners/denom_logo.jpg"),
+          alt: "Denom"
+        },
+        {
+          src: require("../assets/partners/elura_logo.jpg"),
+          alt: "Elura"
+        },
+        {
+          src: require("../assets/partners/honeywell_logo.jpg"),
+          alt: "Honeywell"
+        },
+        {
+          src: require("../assets/partners/jamo_logo.jpg"),
+          alt: "Jamo"
+        },
+        {
+          src: require("../assets/partners/mountainwest_logo.jpg"),
+          alt: "Mainwest"
+        },
+        {
+          src: require("../assets/partners/onkyo_logo.jpg"),
+          alt: "Onkyo"
+        },
+        {
+          src: require("../assets/partners/ring_logo.jpg"),
+          alt: "Ring"
+        },
+        {
+          src: require("../assets/partners/samsung_logo.jpg"),
+          alt: "Samsung"
+        },
+        {
+          src: require("../assets/partners/wave_logo.jpg"),
+          alt: "Wave"
+        },
+        {
+          src: require("../assets/partners/yamaha_logo.jpg"),
+          alt: "Yamaha"
+        }
+      ]
     }
   }
 };
