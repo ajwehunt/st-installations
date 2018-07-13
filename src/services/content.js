@@ -17,8 +17,8 @@ export default {
     },
     services: {
       banner: {
-        text: "WE LOVE WHAT WE DO",
         id: "services-img",
+        text: "WE LOVE WHAT WE DO",
         image: {
           src: require("../assets/banners/main_services.jpg"),
           alt: ""
@@ -107,8 +107,8 @@ export default {
     },
     about: {
       banner: {
-        text: "WE ARE STRONG TOWER",
         id: "about-img",
+        text: "WE ARE STRONG TOWER",
         image: {
           src: require("../assets/stocks/hometheatre_1.jpg"),
           alt: ""
@@ -134,8 +134,8 @@ export default {
     },
     testimonials: {
       banner: {
-        text: "WHAT PEOPLE ARE SAYING",
         id: "testimonials-img",
+        text: "WHAT PEOPLE ARE SAYING",
         image: {
           src: require("../assets/stocks/hometheatre_1.jpg"),
           alt: ""
