@@ -1,6 +1,6 @@
 <template>
   <section class="col-sm-4 col-sm-offset-1">
-    <h2>{{ contact.headerText }}</h2>
+    <h1>{{ contact.headerText }}</h1>
     <address id="footer-info-contact">
       <!-- <div>
           <i class="fa fa-map-pin" aria-hidden="true"></i>
@@ -38,46 +38,43 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="less" scoped>
 #footer-info-contact {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   margin-left: -8px;
-}
 
-#footer-info-contact div {
-  display: flex;
-  align-items: center;
-  margin: 10px 0;
-}
+  div {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
 
-i {
-  width: 30px;
-  margin-right: 16px;
-  font-size: 20px;
-  color: #a7090a;
-  text-align: center;
-}
+    i {
+      width: 30px;
+      margin-right: 16px;
+      font-size: 20px;
+      color: #a7090a;
+      text-align: center;
+    }
 
-span {
-  display: inline-block;
-  width: 90%;
-}
-
-a {
-  font-size: 18px;
-  color: #4a4a4a;
+    a {
+      font-size: 18px;
+      color: #4a4a4a;
+    }
+  }
 }
 
 @media only screen and (min-width: 768px) {
-  i {
-    font-size: 16px;
-    margin-right: 10px;
-  }
+  #footer-info-contact div {
+    i {
+      font-size: 16px;
+      margin-right: 10px;
+    }
 
-  a {
-    font-size: 15px;
+    a {
+      font-size: 15px;
+    }
   }
 }
 </style>

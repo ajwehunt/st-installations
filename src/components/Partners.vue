@@ -2,7 +2,7 @@
   <section id="partners">
     <div class="container">
       <div class="row">
-        <h2 class="section-title">{{ partners.headerText }}</h2>
+        <h1 class="section-title">{{ partners.headerText }}</h1>
         <hr class="section-hr">
         <carousel
           :autoplay="true"

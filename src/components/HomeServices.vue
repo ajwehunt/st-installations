@@ -7,10 +7,10 @@
       <div id="home-services-panel" class="col-sm-10">
         <h2>{{ home.servicesSummary }}</h2>
         <div id="home-services-grid">
-            <HomeServicesLink v-for="service in services.servicesList"
-              :key="service.id"
-              :data="service"
-            />
+          <HomeServicesLink v-for="service in services.servicesList"
+            :key="service.id"
+            :data="service"
+          />
         </div>
       </div>
     </div>

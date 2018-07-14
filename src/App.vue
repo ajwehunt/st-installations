@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Header id="header" :class="getStickyStatus" />
-    <router-view id="main" />
+    <router-view id="router-view" />
     <Footer/>
   </div>
 </template>
@@ -247,7 +247,7 @@ hr {
   }
 }
 
-#main {
+#router-view {
   padding-top: 176px;
 }
 
@@ -266,7 +266,7 @@ hr {
   padding-right: 5px;
 }
 
-#main .container {
+#router-view .container {
   padding: 50px 5px 70px;
   border-bottom: 2px solid #f4f4f4;
 }

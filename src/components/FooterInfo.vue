@@ -2,7 +2,7 @@
   <section id="footer-info" class="container">
     <div class="row">
       <div class="col-sm-5 col-sm-offset-1">
-        <h2>{{ about.headerText }}</h2>
+        <h1>{{ about.headerText }}</h1>
         <p>{{ about.summary }}</p>
       </div>
       <FooterInfoContact/>
@@ -36,7 +36,7 @@ export default {
     margin: 20px 0 10px;
   }
 
-  h2 {
+  h1 {
     font-size: 14px;
     font-weight: 800;
     line-height: 19px;
@@ -46,7 +46,7 @@ export default {
 }
 
 @media only screen and (min-width: 768px) {
-  #footer-info h2 {
+  #footer-info h1 {
     margin-top: 32px;
   }
 }

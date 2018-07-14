@@ -2,8 +2,8 @@
   <div id="header-contact-wrap">
     <address id="header-contact">
       <a :href="`tel:${info.phone}`">
-        <h2>{{ header.callText }}</h2>
-        <h2>{{ info.phone }}</h2>
+        <h1>{{ header.callText }}</h1>
+        <h1>{{ info.phone }}</h1>
       </a>
     </address>
   </div>
@@ -46,7 +46,7 @@ export default {
       display: flex;
       margin-bottom: 14px;
 
-      h2 {
+      h1 {
         color: #fff;
         font-size: 18px;
         font-weight: 600;

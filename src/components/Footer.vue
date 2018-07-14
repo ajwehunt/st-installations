@@ -17,9 +17,3 @@ export default {
   name: "Footer"
 };
 </script>
-
-<style>
-footer .container {
-  background-color: #fff;
-}
-</style>
