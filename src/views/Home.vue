@@ -3,7 +3,7 @@
     <main>
       <HomeHero/>
       <HomeServices/>
-      <HomeSocial fb-id="307009059868928"/>
+      <HomeSocial/>
       <Partners/>
     </main>
   </transition>

@@ -1,8 +1,8 @@
 <template>
   <section id="home-hero">
     <div id="hero-text-box">
-      <h2>{{ heroText.partOne }}</h2>
-      <h2>{{ heroText.partTwo }}</h2>
+      <h2>{{ header.partOne }}</h2>
+      <h2>{{ header.partTwo }}</h2>
     </div>
     <div id="home-hero-changer">
       <div id="hero-filter"></div>
@@ -25,7 +25,7 @@ export default {
   name: "HomeHero",
   data() {
     return {
-      heroText: content.page.home.heroText,
+      header: content.page.home.hero.header,
       images: [],
       mainImageSrc: require("../assets/stocks/relaxingguy.jpg")
     };

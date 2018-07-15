@@ -1,11 +1,11 @@
 <template>
   <section class="container">
     <div class="row">
-      <h1 class="section-title">{{ home.servicesHeaderText }}</h1>
+      <h1 class="section-title">{{ homeServices.headerText }}</h1>
       <hr class="section-hr">
       <div class="col-sm-1"></div>
       <div id="home-services-panel" class="col-sm-10">
-        <h2>{{ home.servicesSummary }}</h2>
+        <h2>{{ homeServices.summary }}</h2>
         <div id="home-services-grid">
           <HomeServicesLink v-for="service in services.servicesList"
             :key="service.id"
@@ -28,7 +28,7 @@ export default {
   name: "HomeServices",
   data() {
     return {
-      home: content.page.home,
+      homeServices: content.page.home.services,
       services: content.page.services
     };
   }
@@ -60,10 +60,6 @@ export default {
   grid-gap: 0px;
 }
 
-/* @media only screen and (min-width: 480px) {
-
-} */
-
 @media only screen and (min-width: 460px) {
   #home-services-grid {
     grid-template-columns: 1fr 1fr;
@@ -72,10 +68,6 @@ export default {
 }
 
 @media only screen and (min-width: 992px) {
-  /* .home-services-panel .row {
-      justify-content: center;
-      display: flex;
-    } */
   #home-services-grid {
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 10px 100px;
