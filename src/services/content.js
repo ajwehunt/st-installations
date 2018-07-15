@@ -1,4 +1,7 @@
+import config from "./../../config";
+
 export default {
+  token: config.fb,
   info: {
     email: "jesse@strongtowersecurity.com",
     phone: "(480) 580-4495",
