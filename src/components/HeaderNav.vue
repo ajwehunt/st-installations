@@ -2,7 +2,8 @@
   <div id="header-nav-wrap">
     <div id="header-nav-main">
       <router-link to="/">
-        <img :src="logo.src" :alt="logo.alt">
+        <img id="logo-main" :src="logo.main.src" :alt="logo.alt">
+        <img id="logo-small" :src="logo.small.src" :alt="logo.alt">
       </router-link>
       <!-- <button class='hamburger-btn' type="button" name="menu" ng-click="toggleNav()">
         <i class="fa fa-bars" aria-hidden="true"></i>
@@ -50,12 +51,22 @@ export default {
 
   img {
     position: absolute;
-    bottom: 20px;
-    height: 150px;
-    z-index: 10;
-    transition: 0.08s;
     cursor: pointer;
     user-select: none;
+    height: 150px;
+    bottom: 20px;
+  }
+
+  #logo-main {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.5s linear;
+    z-index: 10;
+  }
+
+  #logo-small {
+    margin-left: -2px;
+    transition: height 0.09s linear;
   }
 }
 
@@ -64,8 +75,19 @@ export default {
     padding-bottom: 0px;
 
     img {
-      height: 46px;
       bottom: 5px;
+      height: 46px;
+    }
+
+    #logo-small {
+      margin-left: 0px;
+      transition: height 0.09s linear;
+    }
+
+    #logo-main {
+      visibility: hidden;
+      opacity: 0;
+      transition: visibility 0s 0.5s, opacity 0.5s linear, height 0.09s linear;
     }
   }
 }

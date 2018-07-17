@@ -31,7 +31,7 @@ export default {
   }
 }
 
-@media only screen and (min-width: 1050px) {
+@media only screen and (min-width: 1068px) {
   #footer-nav-links {
     max-width: 800px;
   }

@@ -45,7 +45,7 @@ export default {
       const stickyStatus = this.stickyStatus;
       const pageY = window.pageYOffset;
       const headerContactHeight = 42;
-      const headerNavHeight = 120;
+      const headerNavHeight = 118;
 
       if (stickyStatus != "sticky-both" && pageY >= headerNavHeight) {
         this.stickyStatus = "sticky-both";

@@ -169,7 +169,12 @@ export default {
     header: {
       callText: "CALL US:",
       logo: {
-        src: require("../assets/logo.png"),
+        main: {
+          src: require("../assets/logo.png")
+        },
+        small: {
+          src: require("../assets/logo_small.png")
+        },
         alt: "Strong Tower Installations"
       }
     },

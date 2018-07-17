@@ -42,6 +42,7 @@ export default {
   align-items: flex-start;
   justify-content: center;
   user-select: none;
+  margin-left: 12px;
 
   li {
     padding: 0 2px;
@@ -71,6 +72,13 @@ export default {
   #footer-nav-social {
     justify-content: end;
     margin-top: 18px;
+    margin-left: 30px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  #footer-nav-social {
+    margin-left: 0px;
   }
 }
 </style>

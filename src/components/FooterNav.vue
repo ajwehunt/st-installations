@@ -6,7 +6,7 @@
         <div id="footer-logo-wrapper">
           <router-link to="/">
             <img id='footer-logo'
-              :src="logo.src"
+              :src="logo.main.src"
               :alt="logo.alt"
             />
           </router-link>
@@ -60,7 +60,7 @@ export default {
 }
 
 #footer-logo {
-  width: 100px;
+  width: 180px;
 }
 
 #footer-nav-links-wrapper {
