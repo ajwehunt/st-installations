@@ -194,7 +194,7 @@ export default {
       about: {
         headerText: "ABOUT US",
         summary:
-          "We are insightful creators and builders who offer innovative solutions in alarms, cameras, home automation, and surround sound. Our mission is to install the latest and greateast technologies to deliver extraordinary value and security for you and your family."
+          "We are insightful creators and builders who offer innovative solutions in alarms, cameras, home automation, and surround sound. Our mission is to install the latest and greatest technologies to deliver extraordinary value and security for you and your family."
       }
     },
     partners: {
