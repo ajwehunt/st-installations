@@ -25,7 +25,7 @@ export default {
 @media only screen and (min-width: 768px) {
   #footer-nav-links {
     justify-content: flex-start;
-    padding-left: 40px;
+    padding-left: 20px;
     max-width: 400px;
     margin: 8px 0;
   }

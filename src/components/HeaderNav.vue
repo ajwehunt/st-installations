@@ -47,7 +47,9 @@ export default {
   max-width: 1200px;
   margin: 0 auto;
   padding: 10px;
-  transition: 0.08s;
+  transition: padding 0.1s;
+  transition-delay: 0.1s;
+  will-change: padding;
 
   img {
     position: absolute;
@@ -60,13 +62,17 @@ export default {
   #logo-main {
     visibility: visible;
     opacity: 1;
-    transition: opacity 0.5s linear;
+    transition: opacity 0.25s linear;
+    transition-delay: 0.25s;
+    will-change: opacity;
     z-index: 10;
   }
 
   #logo-small {
     margin-left: -2px;
-    transition: height 0.09s linear;
+    transition: height 0.1s linear;
+    transition-delay: 0.1s;
+    will-change: height;
   }
 }
 
@@ -77,17 +83,21 @@ export default {
     img {
       bottom: 5px;
       height: 46px;
+      transition: bottom 0.08s linear, height 0.1s linear;
+      transition-delay: 0.1s;
+      will-change: bottom, height;
     }
 
     #logo-small {
       margin-left: 0px;
-      transition: height 0.09s linear;
     }
 
     #logo-main {
       visibility: hidden;
       opacity: 0;
       transition: visibility 0s 0.5s, opacity 0.5s linear, height 0.09s linear;
+      transition-delay: 0.1s;
+      will-change: opacity, height;
     }
   }
 }

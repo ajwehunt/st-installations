@@ -151,7 +151,32 @@ export default {
           alt: ""
         }
       },
-      headerText: "TESTIMONIALS"
+      ratings: {
+        header: "RATINGS",
+        thumbtack: {
+          image: {
+            src: require("../assets/ratings_thumbtack.png"),
+            alt: "Thumbtack Ratings"
+          },
+          logo: {
+            src: require("../assets/thumbtack_logo.png"),
+            alt: "Thumbtack.com"
+          }
+        },
+        facebook: {
+          image: {
+            src: require("../assets/ratings_facebook.png"),
+            alt: "Facebook Ratings"
+          },
+          logo: {
+            src: require("../assets/facebook_logo.png"),
+            alt: "Facebook.com"
+          }
+        }
+      },
+      reviews: {
+        header: "REVIEWS"
+      }
     },
     contact: {
       banner: {
@@ -162,7 +187,7 @@ export default {
           alt: ""
         }
       },
-      headerText: "YOUR MESSAGE"
+      header: "YOUR MESSAGE"
     }
   },
   component: {

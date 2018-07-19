@@ -5,7 +5,13 @@
       <div id="footer-nav-wrapper" class="col-sm-10">
         <div id="footer-logo-wrapper">
           <router-link to="/">
-            <img id='footer-logo'
+            <img id="footer-logo-small"
+              class="img-responsive'"
+              :src="logo.small.src"
+              :alt="logo.alt"
+            />
+            <img id="footer-logo"
+              class="img-responsive'"
               :src="logo.main.src"
               :alt="logo.alt"
             />
@@ -56,11 +62,16 @@ export default {
 #footer-logo-wrapper {
   display: flex;
   justify-content: center;
-  margin: 8px;
+  padding-top: 14px;
 }
 
 #footer-logo {
+  display: block;
   width: 180px;
+}
+
+#footer-logo-small {
+  display: none;
 }
 
 #footer-nav-links-wrapper {
@@ -71,8 +82,13 @@ export default {
 }
 
 @media only screen and (min-width: 768px) {
+  #footer-logo-small {
+    display: block;
+    width: 33px;
+  }
+
   #footer-logo {
-    width: 70px;
+    display: none;
   }
 
   #footer-nav-wrapper,

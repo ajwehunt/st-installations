@@ -4,7 +4,7 @@
       <div class="col-sm-1"></div>
       <div class="col-sm-10">
         <div id="contact-form">
-          <h1 class="section-title">{{ contact.headerText }}</h1>
+          <h1 class="section-title">{{ contact.header }}</h1>
           <hr class="section-hr">
           <form method="POST" :action="`http://formspree.io/${info.email}`">
             <div class="col-xs-12 col-sm-6">
