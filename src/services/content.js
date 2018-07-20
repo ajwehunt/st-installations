@@ -1,7 +1,4 @@
-// import config from "./../../config";
-
 export default {
-  // token: config.fb,
   info: {
     email: "jesse@strongtowersecurity.com",
     phone: "(480) 580-4495",
@@ -141,6 +138,52 @@ export default {
           alt: "Three handsome gentlemen"
         }
       }
+    },
+    faqs: {
+      banner: {
+        id: "faqs-img",
+        text: "COMMONLY ASKED QUESTIONS",
+        image: {
+          src: require("../assets/stocks/hometheatre_1.jpg"),
+          alt: ""
+        }
+      },
+      header: "FAQS",
+      qsAndAs: [
+        {
+          q: "What is your typical process for working with a new customer?",
+          a:
+            "We take the time to listen to what they need and want, striving to make good and honest suggestions .We then move forward with a fair and honest quote."
+        },
+        {
+          q:
+            "What education and/or training do you have that relates to your work?",
+          a:
+            "I have 10 years experience in this field and I am learning new things everyday that I am using on the jobsite. I go to all the training that distributors have so that I can be up to date on what is happening in the industry."
+        },
+        {
+          q: "How did you get started doing this type of work?",
+          a:
+            "I was looking for a Job and started as a sales rep for a Security company. In a short period of time I moved from sales rep to tech and then to Operations Manager. I love installing, problem solving, and making customers happy!"
+        },
+        {
+          q: "What types of customers have you worked with?",
+          a:
+            "All types, we have done work for homeowners, small business, and large business."
+        },
+        {
+          q:
+            "What advice would you give a customer looking to hire a provider in your area of work?",
+          a:
+            "Look for someone that cares about what you want and is willing to come up with good solutions to accomplish what you are after."
+        },
+        {
+          q:
+            "What questions should customers think through before talking to professionals about their project?",
+          a:
+            "Who is responsible for providing parts and supplies, what else should I look at accomplishing since I already have committed to hiring a professional. What do I want to accomplish, and what is the end goal."
+        }
+      ]
     },
     testimonials: {
       banner: {

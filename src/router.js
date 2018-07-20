@@ -3,6 +3,7 @@ import Router from "vue-router";
 import Home from "@/views/Home";
 import Services from "@/views/Services";
 import About from "@/views/About";
+import Faqs from "@/views/Faqs";
 import Testimonials from "@/views/Testimonials";
 import Contact from "@/views/Contact";
 
@@ -31,6 +32,14 @@ export default new Router({
       path: "/about",
       name: "ABOUT",
       component: About,
+      meta: {
+        scrollToTop: true
+      }
+    },
+    {
+      path: "/faqs",
+      name: "FAQS",
+      component: Faqs,
       meta: {
         scrollToTop: true
       }

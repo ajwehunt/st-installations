@@ -3,7 +3,8 @@
       <main>
         <Banner :data="services.banner" />
         <section id="services-panel-wrapper" class="container">
-          <Services-panel v-for="service in services.servicesList"
+          <Services-panel
+            v-for="service in services.servicesList"
             :key="service.id"
             :data="service"
           />

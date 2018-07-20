@@ -8,24 +8,28 @@
       <div class="row">
         <div id="ratings-wrapper">
           <div id="thumbtack-ratings-wrapper">
-            <img id="thumbtack-logo"
+            <img 
+              id="thumbtack-logo"
               class="img-responsive"
               :src="ratings.thumbtack.logo.src"
               :alt="ratings.thumbtack.logo.alt"
             />
-            <img id="thumbtack-ratings-img"
+            <img 
+              id="thumbtack-ratings-img"
               class="img-responsive"
               :src="ratings.thumbtack.image.src"
               :alt="ratings.thumbtack.image.alt"
             />
           </div>
           <div id="facebook-ratings-wrapper">
-            <img id="facebook-logo"
+            <img 
+              id="facebook-logo"
               class="img-responsive"
               :src="ratings.facebook.logo.src"
               :alt="ratings.facebook.logo.alt"
             />
-            <img id="facebook-ratings-img"
+            <img 
+              id="facebook-ratings-img"
               class="img-responsive"
               :src="ratings.facebook.image.src"
               :alt="ratings.facebook.image.alt"
@@ -65,6 +69,7 @@ export default {
       width: 130px;
     }
   }
+
   #facebook-ratings-wrapper {
     display: flex;
     flex-direction: column;
