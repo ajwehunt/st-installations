@@ -6,7 +6,8 @@
       </a>
     </li>
     <li>
-      <div class="fb-like"
+      <div
+        class="fb-like"
         :data-href="info.fbLink"
         data-layout="button"
         data-action="like"

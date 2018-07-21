@@ -6,18 +6,42 @@
         <div id="contact-form">
           <h1 class="section-title">{{ contact.header }}</h1>
           <hr class="section-hr">
-          <form method="POST" :action="`http://formspree.io/${info.email}`">
+          <form
+            method="POST"
+            :action="`http://formspree.io/${info.email}`"
+          >
             <div class="col-xs-12 col-sm-6">
               <label for="name">Name*</label>
-              <input type="text" class="form-control" id="name" name="Name" placeholder="Name" required="">
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                name="Name"
+                placeholder="Name"
+                required=""
+              >
             </div>
             <div class="col-xs-12 col-sm-6">
               <label for="email">Email Address*</label>
-              <input type="text" class="form-control" id="email" name="Email" placeholder="Email Address" required="">
+              <input
+                type="text"
+                class="form-control"
+                id="email"
+                name="Email"
+                placeholder="Email Address"
+                required=""
+              >
             </div>
             <div class="col-xs-12 col-sm-12">
               <label for="message">Message*</label>
-              <textarea class="form-control" rows="5" id="message" name="message" placeholder="Your message" required=""></textarea>
+              <textarea
+                class="form-control" 
+                rows="5"
+                id="message"
+                name="message"
+                placeholder="Your message"
+                required=""
+              ></textarea>
             </div>
             <div id="button-wrapper">
               <button type="submit">Send Message</button>

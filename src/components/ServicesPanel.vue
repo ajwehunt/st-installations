@@ -3,7 +3,8 @@
     <div class="col-sm-1">
     </div>
     <div class="col-sm-6">
-      <img class="img-responsive"
+      <img
+        class="img-responsive"
         :src="data.image.src"
         :alt="data.image.alt"
       />

@@ -1,5 +1,6 @@
 <template>
-  <router-link :id="data.id"
+  <router-link
+    :id="data.id"
     class="col-md-3 service-title"
     :to="`${$router.options.routes[1].path}#${data.id}`"
     tag="div"

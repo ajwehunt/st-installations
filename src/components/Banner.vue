@@ -1,6 +1,7 @@
 <template>
   <div class='banner'>
-    <div class="img"
+    <div
+      class="img"
       :id="data.id"
       :style="{ backgroundImage: `url('${data.image.src}')`}"
     />

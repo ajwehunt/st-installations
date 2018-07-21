@@ -12,7 +12,10 @@
           navigationPrevLabel="<i class='fa fa-chevron-left' aria-hidden='true'></i>"
           :perPageCustom="[[0,1], [768, 2]]"
         >
-          <slide v-for="logo in partners.logos" :key="logo.alt">
+          <slide
+            v-for="logo in partners.logos"
+            :key="logo.alt"
+          >
             <div><img :src="logo.src" :alt="logo.alt"></div>
           </slide>
         </carousel>

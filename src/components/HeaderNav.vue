@@ -2,8 +2,16 @@
   <div id="header-nav-wrap">
     <div id="header-nav-main">
       <router-link to="/">
-        <img id="logo-main" :src="logo.main.src" :alt="logo.alt">
-        <img id="logo-small" :src="logo.small.src" :alt="logo.alt">
+        <img
+          id="logo-main"
+          :src="logo.main.src"
+          :alt="logo.alt"
+        >
+        <img
+          id="logo-small"
+          :src="logo.small.src"
+          :alt="logo.alt"
+        >
       </router-link>
       <!-- <button class='hamburger-btn' type="button" name="menu" ng-click="toggleNav()">
         <i class="fa fa-bars" aria-hidden="true"></i>

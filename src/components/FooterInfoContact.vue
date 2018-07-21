@@ -12,7 +12,8 @@
       </div>
       <div>
           <i class="fa fa-envelope" aria-hidden="true"></i>
-          <a :href="`mailto:${info.email}`+
+          <a
+            :href="`mailto:${info.email}`+
             `?subject=${email.subject}&amp;`+
             `body=${email.intro}%0A%0A${email.body}%0A%0A${email.outro}`"
           >

@@ -44,7 +44,7 @@ export default {
 
     a {
       display: flex;
-      margin-bottom: 14px;
+      margin-bottom: 13px;
 
       h1 {
         color: #fff;

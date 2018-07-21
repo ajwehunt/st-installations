@@ -5,12 +5,14 @@
       <div id="footer-nav-wrapper" class="col-sm-10">
         <div id="footer-logo-wrapper">
           <router-link to="/">
-            <img id="footer-logo-small"
+            <img
+              id="footer-logo-small"
               class="img-responsive'"
               :src="logo.small.src"
               :alt="logo.alt"
             />
-            <img id="footer-logo"
+            <img
+              id="footer-logo"
               class="img-responsive'"
               :src="logo.main.src"
               :alt="logo.alt"

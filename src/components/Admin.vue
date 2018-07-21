@@ -1,6 +1,12 @@
 <template>
   <aside>
-    <button class="btn btn-primary" v-if="!authorized" @click="runLogin()">Click to login</button>
+    <button
+      class="btn btn-primary"
+      v-if="!authorized"
+      @click="runLogin()"
+    >
+      Click to login
+    </button>
     <div v-if="authorized">
       <div class="row">
         <div class="col-md-6">

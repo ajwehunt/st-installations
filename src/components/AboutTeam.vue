@@ -6,7 +6,8 @@
         <hr class="section-hr">
         <div class="col-sm-1"></div>
         <div id="about-team-image" class="col-sm-10">
-          <img :src="team.image.src"
+          <img
+            :src="team.image.src"
             :alt="team.image.alt"
           />
         </div>
