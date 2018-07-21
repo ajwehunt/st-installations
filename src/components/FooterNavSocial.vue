@@ -1,14 +1,14 @@
 <template>
   <ul id="footer-nav-social">
     <li>
-      <a :href="info.fbLink" target="_blank">
+      <a :href="info.fb.link" target="_blank">
         <i class="fa fa-facebook" aria-hidden="true"/>
       </a>
     </li>
     <li>
       <div
         class="fb-like"
-        :data-href="info.fbLink"
+        :data-href="info.fb.link"
         data-layout="button"
         data-action="like"
         data-size="small"
@@ -17,8 +17,11 @@
       ></div>
     </li>
     <li id="thumbtack">
-      <a target="_blank" :href="info.thumbtackLink">
-        <img src="https://static.thumbtackstatic.com/media/pages/profile/standard-widgets/pro-svg/inline.svg"/>
+      <a target="_blank" :href="info.tt.link">
+        <img
+          src="https://static.thumbtackstatic.com/media/pages/profile/standard-widgets/pro-svg/inline.svg"
+          :alt="info.tt.alt"
+        />
       </a>
     </li>
   </ul>

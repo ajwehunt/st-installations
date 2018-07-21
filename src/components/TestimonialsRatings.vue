@@ -7,12 +7,15 @@
       </div>
       <div class="row">
         <div id="ratings-wrapper">
-          <div id="thumbtack-ratings-wrapper">
+          <a id="thumbtack-ratings-wrapper"
+            :href="info.ttLink"
+            target='_blank'
+          >
             <img 
               id="thumbtack-logo"
               class="img-responsive"
               :src="ratings.thumbtack.logo.src"
-              :alt="ratings.thumbtack.logo.alt"
+              :alt="info.tt.alt"
             />
             <img 
               id="thumbtack-ratings-img"
@@ -20,13 +23,16 @@
               :src="ratings.thumbtack.image.src"
               :alt="ratings.thumbtack.image.alt"
             />
-          </div>
-          <div id="facebook-ratings-wrapper">
+          </a>
+          <a id="facebook-ratings-wrapper"
+            :href="info.fb.link"
+            target='_blank'
+          >
             <img 
               id="facebook-logo"
               class="img-responsive"
               :src="ratings.facebook.logo.src"
-              :alt="ratings.facebook.logo.alt"
+              :alt="info.fb.alt"
             />
             <img 
               id="facebook-ratings-img"
@@ -34,7 +40,7 @@
               :src="ratings.facebook.image.src"
               :alt="ratings.facebook.image.alt"
             />
-          </div>
+          </a>
         </div>
       </div>
     </div>
@@ -48,7 +54,8 @@ export default {
   name: "TestimonialsRatings",
   data() {
     return {
-      ratings: content.page.testimonials.ratings
+      ratings: content.page.testimonials.ratings,
+      info: content.info
     };
   }
 };
@@ -57,13 +64,21 @@ export default {
 <style lang="less">
 #ratings-wrapper {
   display: flex;
-  width: 100%;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  width: 100%;
+  padding: 0 30px;
 
-  #thumbtack-ratings-wrapper {
+  a {
     display: flex;
     flex-direction: column;
+    margin: 40px 0 32px;
+  }
+
+  #thumbtack-ratings-wrapper {
+    width: 350px;
+    max-width: 100%;
 
     #thumbtack-logo {
       width: 130px;
@@ -71,16 +86,23 @@ export default {
   }
 
   #facebook-ratings-wrapper {
-    display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    height: 100px;
+    width: 220px;
 
     #facebook-ratings-img {
-      width: 200px;
+      width: 220px;
     }
 
     #facebook-logo {
       width: 130px;
     }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  #ratings-wrapper {
+    flex-direction: row;
   }
 }
 </style>

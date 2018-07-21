@@ -2,8 +2,14 @@ export default {
   info: {
     email: "jesse@strongtowersecurity.com",
     phone: "(480) 580-4495",
-    fbLink: "https://www.facebook.com/strongtowerinstallations/",
-    thumbtackLink: "https://www.thumbtack.com/-Gilbert-AZ/service/2365712"
+    tt: {
+      link: "https://www.thumbtack.com/-Gilbert-AZ/service/2365712",
+      alt: "Our Thumbtack.com Page"
+    },
+    fb: {
+      link: "https://www.facebook.com/strongtowerinstallations/",
+      alt: "Our Facebook.com Page"
+    }
   },
   page: {
     home: {
@@ -198,27 +204,119 @@ export default {
         header: "RATINGS",
         thumbtack: {
           image: {
-            src: require("../assets/ratings_thumbtack.png"),
+            src: require("../assets/social/thumbtack_ratings.png"),
             alt: "Thumbtack Ratings"
           },
           logo: {
-            src: require("../assets/thumbtack_logo.png"),
-            alt: "Thumbtack.com"
+            src: require("../assets/social/thumbtack_logo.png")
           }
         },
         facebook: {
           image: {
-            src: require("../assets/ratings_facebook.png"),
+            src: require("../assets/social/facebook_ratings.png"),
             alt: "Facebook Ratings"
           },
           logo: {
-            src: require("../assets/facebook_logo.png"),
-            alt: "Facebook.com"
+            src: require("../assets/social/facebook_logo.png")
           }
         }
       },
       reviews: {
-        header: "REVIEWS"
+        header: "REVIEWS",
+        fb: {
+          logo: require("../assets/social/facebook_logo_small.png"),
+          list: [
+            {
+              name: "James Gallucci",
+              rating: 5,
+              text:
+                "Jessie is a true professional, honest, trustworthy, helpful & an expert at what he does. I feel so lucky I came across his name to help fix my ongoing problems with my home theatre system & network. I did a full scale remodel on my Cave Creek home in November 2016. The physical remodel on the home went through just fine without a hitch, but the system upgrade was nothing short of ongoing problems & issues. It included the following for over 18 months: some things working, nothing working, half working, and kinda working ever since. My original company contracted was Starpower a major retailer in North Scottsdale. After several follow up appointments and subsequent charges and the small fortune I paid them for the remodel- I finally cut them off after over a year of not resolving any ongoing, existing, or current issues. Jessie came & did a consultation to help with all the current problems. He was nothing short of a breath of fresh air. For the first time since 2016 I felt I finally found someone that could help fix all the issues I had been having- and he did not disappoint. He was out Friday & Saturday this week & I am finally enjoying my system pool side without any problems. He even charged me less than the original quote because he found an upgrade he recommended was not compatible with the part of my system that powers my patio. If you are considering his company for anything big or small feel free to have him pass you my personal number I can give him a 100% rating and truly feel that is not enough. 1 Happy Customer- Jim G.",
+              date: "Jul 1, 2018"
+            },
+            {
+              name: "Tara Davis",
+              rating: 5,
+              text:
+                "Excellent customer service. Installs quality products and is available to help with questions. Highly recommended!",
+              date: "Feb 10, 2018"
+            },
+            {
+              name: "Kathy Lynch",
+              rating: 5,
+              text:
+                "Went above and beyond when installing a surround sound system and continuesto be on call when we need help with our security system. Professional, kind, and cleaned up every inch of dust from their work. I think my house was cleaner when they finished :) Highly recommend!",
+              date: "June 28, 2017"
+            },
+            {
+              name: "Michael Lynch",
+              rating: 5,
+              text:
+                "Very professional company. Very thorough in the product review and most importantly...the after install consult, which showed us how to use the system and trouble shooting if we run into any issues. They went above and beyond and I highly recommend Strong Tower to anyone looking to add surround sound and/or security camera's in their home.",
+              date: "June 30, 2017"
+            },
+            {
+              name: "Brandon Ray",
+              rating: 5,
+              text:
+                "We have used Strong Tower Security for 3 different jobs now and I can't say enough about the team and the work they do. Very professional, easy to work with, fair pricing, and quality work, nothing more I could have asked for. Thank you Jesse and team!",
+              date: "March 22, 2017"
+            },
+            {
+              name: "Sujean Wilson",
+              rating: 5,
+              text:
+                "Awesome Company to work with. Will be using them again in the near future to install a camera on my front door once my security screen is installed. Thank you Jesse.",
+              date: "April 19, 2016"
+            }
+          ]
+        },
+        tt: {
+          logo: require("../assets/social/thumbtack_logo_small.png"),
+          list: [
+            {
+              name: "James G.",
+              rating: 5,
+              text:
+                "Jessie is hands down the only person I would use for needs/upgrades in the future. I did a major remodel on home in November 2016 with Starpower (hi-fi) retailer located in North Scottsdale. Have had nothing but problems ever since. After too many follow up appointments & spending a small fortune I cut them off & got Jessie out to clean up their mess. Not only did he guide me on how to fix everything but was quick to come up with ways to improve system without replacing things that didn’t need to be replaced. If you don’t consider him for your upcoming project you have already made a mistake.",
+              date: "Jul 1, 2018"
+            },
+            {
+              name: "Paulette W.",
+              rating: 5,
+              text:
+                "Jesse is terrific. He knew we were on a budget because of wedding and he made sure surround sound system was completed on time. They cleaned up all debri and stuck around to demonstrate operations of our system eventhough my fiance was late getting home. I will hire them again for our upgrades. A true professional.",
+              date: "Nov 22, 2017"
+            },
+            {
+              name: "Jonathan S.",
+              rating: 5,
+              text:
+                "Professionalism and excellence are two words that come to mind with my experience. My entire experience was great. I told them what I wanted and they made it happen. My expectations were high but they were met and exceeded. My cameras are hard wired yet appear wireless because of how well they were installed. If I expand the number of cameras I have installed, I will without question be using Strong Tower Security. I highly recommend them.",
+              date: "Dec 18, 2016"
+            },
+            {
+              name: "Jacqueline P.",
+              rating: 5,
+              text:
+                'Highly recommended! We had multiple technicians from other companies attempt to troubleshoot an intermittent issue with our home A/V system making a squealing noise, with no resolution. Jesse was quickly responsive to initial questions, scheduled promptly to come over to evaluate options, proposed equipment replacement at a modest cost & completely fixed the audio as well as offered an easy "smart" remote to simplify component switching. Everything\'s working great, thank you! :)',
+              date: "May 27, 2018"
+            },
+            {
+              name: "Vince D.",
+              rating: 5,
+              text:
+                "I looked at several replies to my job request, looked at all of their reviews. Had estimates done by 2, and went with Jesse and Strong Tower. Jesse and his crew were punctual, professional, and personable. They did excellent work and did so quickly and efficiently. He made sure I was well versed on how to use the system and their commitment to customer service. Even days after the install he is communicating with me to make sure the system is running as expected, to my standards, and his satisfaction with the equipment. I have already recommended Jesse to family and friends. Great job!",
+              date: "May 19, 2018V"
+            },
+            {
+              name: "Karen N.",
+              rating: 5,
+              text:
+                "The team were very professional and helpful and recommended very high quality products. Every room looks and sounds amazing and when I had questions after the fact Jesse was very helpful. Great company and reassuring to know the service doesn’t stop when the job is complete",
+              date: "May 16, 2018"
+            }
+          ]
+        }
       }
     },
     contact: {
@@ -270,54 +368,67 @@ export default {
       logos: [
         {
           src: require("../assets/partners/2gig_logo.jpg"),
+          link: "",
           alt: "2gig"
         },
         {
           src: require("../assets/partners/alarmdotcom_logo.jpg"),
+          link: "",
           alt: "Alarmdotcom"
         },
         {
           src: require("../assets/partners/cctvcore_logo.jpg"),
+          link: "",
           alt: "Cctvcore"
         },
         {
           src: require("../assets/partners/denom_logo.jpg"),
+          link: "",
           alt: "Denom"
         },
         {
           src: require("../assets/partners/elura_logo.jpg"),
+          link: "",
           alt: "Elura"
         },
         {
           src: require("../assets/partners/honeywell_logo.jpg"),
+          link: "",
           alt: "Honeywell"
         },
         {
           src: require("../assets/partners/jamo_logo.jpg"),
+          link: "",
           alt: "Jamo"
         },
         {
           src: require("../assets/partners/mountainwest_logo.jpg"),
+          link: "",
           alt: "Mainwest"
         },
         {
           src: require("../assets/partners/onkyo_logo.jpg"),
+          link: "",
           alt: "Onkyo"
         },
         {
           src: require("../assets/partners/ring_logo.jpg"),
+          link: "",
           alt: "Ring"
         },
         {
           src: require("../assets/partners/samsung_logo.jpg"),
+          link: "",
           alt: "Samsung"
         },
         {
           src: require("../assets/partners/wave_logo.jpg"),
+          link: "",
           alt: "Wave"
         },
         {
           src: require("../assets/partners/yamaha_logo.jpg"),
+          link: "",
           alt: "Yamaha"
         }
       ]
