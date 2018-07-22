@@ -7,6 +7,7 @@
         <div class="col-sm-1"></div>
         <div id="plugin-container" class="col-sm-10">
           <div id="fb-plugin">
+            <HomeSocialFbloader />
             <div
               class="fb-page"
               data-href="https://www.facebook.com/strongtowerinstallations/"
@@ -33,9 +34,13 @@
 
 <script>
 import content from "@/services/content.js";
+import HomeSocialFbloader from "@/components/HomeSocialFbloader.vue";
 
 /*eslint-disable*/
 export default {
+  components: {
+    HomeSocialFbloader
+  },
   name: "HomeSocial",
   data () {
     return {
@@ -66,10 +71,13 @@ export default {
     position: relative;
     margin: 10px;
     box-shadow: 0 3px 30px 5px rgba(0, 0, 0, 0.15);
+    height: 500px;
     width: 100%;
-    height: 100%;
-    max-height: 480px;
     max-width: 500px;
+
+    .fb-page {
+      z-index: 5;
+    }
   }
 }
 </style>
