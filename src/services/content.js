@@ -134,7 +134,7 @@ export default {
           partOne:
             "Hello, we are Strong Tower Installations. We are a group of highly talented individuals specialized in creating innovative home theatre and security solutions. Our mission is to stay true to the nature of quality sound and security as an evidence-driven methodology to create user-centered products while taking advantage of our technical capabilities.",
           partTwo:
-            "We’re locally owned & operated out of Gilbert, Arizona. Our founders live and work in Arizona. When you call us, you’ll get a live person. Not able to call? No worries, we’ve got 24/7 live SMS (text) support too."
+            "We’re locally owned & operated out of Gilbert, Arizona. When you call us, you’ll get a live person. Not able to call? No worries, we’ve got 24/7 live SMS (text) support too."
         }
       },
       team: {
@@ -227,13 +227,6 @@ export default {
           logo: require("../assets/social/facebook_logo_small.png"),
           list: [
             {
-              name: "James Gallucci",
-              rating: 5,
-              text:
-                "Jessie is a true professional, honest, trustworthy, helpful & an expert at what he does. I feel so lucky I came across his name to help fix my ongoing problems with my home theatre system & network. I did a full scale remodel on my Cave Creek home in November 2016. The physical remodel on the home went through just fine without a hitch, but the system upgrade was nothing short of ongoing problems & issues. It included the following for over 18 months: some things working, nothing working, half working, and kinda working ever since. My original company contracted was Starpower a major retailer in North Scottsdale. After several follow up appointments and subsequent charges and the small fortune I paid them for the remodel- I finally cut them off after over a year of not resolving any ongoing, existing, or current issues. Jessie came & did a consultation to help with all the current problems. He was nothing short of a breath of fresh air. For the first time since 2016 I felt I finally found someone that could help fix all the issues I had been having- and he did not disappoint. He was out Friday & Saturday this week & I am finally enjoying my system pool side without any problems. He even charged me less than the original quote because he found an upgrade he recommended was not compatible with the part of my system that powers my patio. If you are considering his company for anything big or small feel free to have him pass you my personal number I can give him a 100% rating and truly feel that is not enough. 1 Happy Customer- Jim G.",
-              date: "Jul 1, 2018"
-            },
-            {
               name: "Tara Davis",
               rating: 5,
               text:
@@ -267,6 +260,13 @@ export default {
               text:
                 "Awesome Company to work with. Will be using them again in the near future to install a camera on my front door once my security screen is installed. Thank you Jesse.",
               date: "April 19, 2016"
+            },
+            {
+              name: "Ryan Schultze",
+              rating: 5,
+              text:
+                "Jesse is a true professional. I would highly recommend his team for any project.",
+              date: "April 29, 2017"
             }
           ]
         },
@@ -306,7 +306,7 @@ export default {
               rating: 5,
               text:
                 "I looked at several replies to my job request, looked at all of their reviews. Had estimates done by 2, and went with Jesse and Strong Tower. Jesse and his crew were punctual, professional, and personable. They did excellent work and did so quickly and efficiently. He made sure I was well versed on how to use the system and their commitment to customer service. Even days after the install he is communicating with me to make sure the system is running as expected, to my standards, and his satisfaction with the equipment. I have already recommended Jesse to family and friends. Great job!",
-              date: "May 19, 2018V"
+              date: "May 19, 2018"
             },
             {
               name: "Karen N.",

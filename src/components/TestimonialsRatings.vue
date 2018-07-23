@@ -8,7 +8,7 @@
       <div class="row">
         <div id="ratings-wrapper">
           <a id="thumbtack-ratings-wrapper"
-            :href="info.ttLink"
+            :href="info.tt.link"
             target='_blank'
           >
             <img 

@@ -5,8 +5,8 @@
         <h1 class="section-title">{{ faqs.header }}</h1>
         <hr class="section-hr">
       </div>
-      <div class="row">
-        <ul class="qsAndAs-wrapper">
+      <div class="qsAndAs-wrapper row">
+        <ul>
           <li
             v-for="qAndA in faqs.qsAndAs"
             :key="qAndA.q"
@@ -35,23 +35,29 @@ export default {
 
 <style lang="less">
 .qsAndAs-wrapper {
-  max-width: 700px;
-  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  padding: 0 30px;
 
-  li {
-    margin-bottom: 40px;
-  }
+  ul {
+    max-width: 700px;
+    margin-top: 20px;
 
-  .question {
-    font-size: 18px;
-    line-height: 26px;
-    font-weight: 700;
-  }
+    li {
+      margin-bottom: 60px;
+    }
 
-  .answer {
-    font-size: 16px;
-    line-height: 22px;
-    padding-top: 10px;
+    .question {
+      font-size: 18px;
+      line-height: 26px;
+      font-weight: 700;
+    }
+
+    .answer {
+      font-size: 16px;
+      line-height: 22px;
+      padding-top: 10px;
+    }
   }
 }
 </style>

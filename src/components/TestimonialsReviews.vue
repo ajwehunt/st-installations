@@ -1,9 +1,11 @@
 <template>
-  <section>
+  <section id="reviews">
     <div class="container">
       <div class="row">
         <h1 class="section-title">{{ reviews.header }}</h1>
         <hr class="section-hr">
+      </div>
+      <div id="reviews-carousel">
         <carousel
           :navigationEnabled="true"
           navigationNextLabel="<i class='fa fa-chevron-right' aria-hidden='true'></i>"
@@ -18,6 +20,7 @@
               :data="review"
               :info="info.tt"
               :logo="reviews.tt.logo"
+              :rating="`tt tt-${review.rating}`"
             />
           </slide>
           <slide
@@ -28,6 +31,7 @@
               :data="review"
               :info="info.fb"
               :logo="reviews.fb.logo"
+              :rating="`fb fb-${review.rating}`"
             />
           </slide>
         </carousel>
@@ -56,3 +60,66 @@ export default {
   }
 };
 </script>
+
+<style lang="less">
+#reviews {
+  #reviews-carousel {
+    display: flex;
+    justify-content: center;
+  }
+
+  .VueCarousel {
+    width: 900px;
+
+    .VueCarousel-slide {
+      display: flex;
+      justify-content: center;
+    }
+
+    .VueCarousel-navigation--disabled {
+      display: none;
+    }
+
+    .VueCarousel-navigation-button {
+      font-size: 30px !important;
+      top: 200px !important;
+    }
+
+    .VueCarousel-navigation-prev {
+      left: -4px;
+      color: #797979;
+    }
+
+    .VueCarousel-navigation-next {
+      right: -4px;
+      color: #797979;
+    }
+
+    .VueCarousel-pagination {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #reviews .VueCarousel-pagination {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  #reviews {
+    .VueCarousel-navigation-button {
+      font-size: 24px !important;
+    }
+
+    .VueCarousel-navigation-prev {
+      left: -4%;
+    }
+
+    .VueCarousel-navigation-next {
+      right: -4%;
+    }
+  }
+}
+</style>

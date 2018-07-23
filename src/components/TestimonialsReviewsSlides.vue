@@ -10,7 +10,7 @@
         >
       </a>
     </div>
-    <div class="review-rating">{{data.rating}}</div>
+    <div :class="`review-rating ${rating}`"></div>
     <div class="review-text">{{data.text}}</div>
     <div class="review-date">{{data.date}}</div>
   </div>
@@ -19,13 +19,13 @@
 <script>
 export default {
   name: "TestimonialsReviewsSlides",
-  props: ["data", "info", "logo"]
+  props: ["data", "info", "logo", "rating"]
 };
 </script>
 
 <style lang="less">
 .review {
-  height: 400px;
+  height: 430px;
   width: 300px;
   max-width: 100%;
 
@@ -43,7 +43,39 @@ export default {
 
     img {
       width: 30px;
+      padding-top: 10px;
     }
+  }
+
+  .review-rating {
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &.tt {
+      height: 16px;
+      width: 85px;
+
+      &.tt-5 {
+        background-image: url("../assets/social/thumbtack_5star.png");
+      }
+    }
+
+    &.fb {
+      height: 25px;
+      width: 50px;
+
+      &.fb-5 {
+        background-image: url("../assets/social/facebook_5star.png");
+      }
+    }
+  }
+
+  .review-text {
+    padding: 12px 0 6px;
+  }
+
+  .review-date {
+    color: #666;
   }
 }
 </style>
