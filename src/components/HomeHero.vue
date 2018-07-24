@@ -110,11 +110,13 @@ export default {
   z-index: 2;
 
   h2 {
-    font-size: 40px;
-    font-weight: 400;
+    font-size: 46px;
+    font-weight: 500;
     line-height: 50px;
     color: #fff;
     user-select: none;
+    text-transform: uppercase;
+    margin-bottom: 8px;
   }
 }
 

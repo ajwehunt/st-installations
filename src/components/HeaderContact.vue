@@ -49,7 +49,7 @@ export default {
       h1 {
         color: #fff;
         font-size: 18px;
-        font-weight: 600;
+        font-weight: 500;
 
         &:first-child {
           margin-right: 12px;

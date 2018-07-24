@@ -114,7 +114,7 @@ export default {
   display: none;
 
   li {
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 700;
 
     &:last-child {

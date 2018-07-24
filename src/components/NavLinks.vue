@@ -29,13 +29,14 @@ export default {
   user-select: none;
 
   li {
+    font-family: "Dosis", sans-serif;
     margin: 6px 12px;
     padding-bottom: 2px;
     border-bottom: 3px solid #ffffff;
     cursor: pointer;
     color: #7f7f7f;
     transition: 0.25s;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
 
     &.router-link-exact-active,
     &:hover {

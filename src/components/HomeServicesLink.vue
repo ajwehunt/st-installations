@@ -6,7 +6,7 @@
     tag="div"
   >
     <i :class="data.faIcon" class="fa" aria-hidden="true"></i>
-    <h3>{{ data.name }}</h3>
+    <h2>{{ data.name }}</h2>
     <!-- <p>{{ data.summary }}</p> -->
     <!-- <router-link to="/services#SecuritySystems" tag="button">LEARN MORE</router-link> -->
   </router-link>
@@ -29,6 +29,11 @@ export default {
   justify-content: center;
   align-items: center;
   text-align: center;
+
+  h2 {
+    font-size: 17px;
+    font-weight: 500;
+  }
 
   &:hover {
     box-shadow: 0 3px 30px 5px rgba(0, 0, 0, 0.15);

@@ -94,7 +94,7 @@ export default {
         padding: 18px 26px;
         border-radius: 2px;
         font-size: 16px;
-        font-weight: 600;
+        font-weight: 500;
         line-height: 22px;
         letter-spacing: 2px;
         transition: background 0.2s ease-in-out, color 0.2s ease-in-out,

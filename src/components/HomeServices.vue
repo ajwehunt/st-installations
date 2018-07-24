@@ -5,7 +5,7 @@
       <hr class="section-hr">
       <div class="col-sm-1"></div>
       <div id="home-services-panel" class="col-sm-10">
-        <h2>{{ homeServices.summary }}</h2>
+        <p>{{ homeServices.summary }}</p>
         <div id="home-services-grid">
           <HomeServicesLink
             v-for="service in services.servicesList"
@@ -45,7 +45,7 @@ export default {
   margin-top: 10px;
   box-shadow: 0 3px 30px 5px rgba(0, 0, 0, 0.15);
 
-  h2 {
+  p {
     padding: 0 10%;
     font-size: 17px;
     line-height: 36px;

@@ -211,6 +211,7 @@ hr {
 }
 
 #app {
+  // font-family: "Dosis", sans-serif;
   font-family: "Open Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -218,6 +219,12 @@ hr {
   background: #f4f4f4;
   line-height: 24px;
   font-size: 14px;
+}
+
+h1,
+h2 {
+  font-family: "Dosis", sans-serif;
+  letter-spacing: 2px;
 }
 
 #header {
@@ -273,11 +280,12 @@ hr {
 
 .section-title {
   text-align: center;
-  font-size: 16px;
+  font-size: 19px;
   font-weight: 700;
   line-height: 22px;
   margin-bottom: 15px;
   text-transform: uppercase;
+  letter-spacing: 3px;
 }
 
 .section-hr {
