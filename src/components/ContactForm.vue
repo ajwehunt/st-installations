@@ -6,47 +6,48 @@
         <div id="contact-form">
           <h1 class="section-title">{{ contact.header }}</h1>
           <hr class="section-hr">
-          <form
+          <v-form
+            class="v-form"
             method="POST"
             :action="`http://formspree.io/${info.email}`"
           >
-            <div class="col-xs-12 col-sm-6">
-              <label for="name">Name*</label>
-              <input
+            <v-flex class="xs12 sm6">
+              <v-text-field
+                solo
                 type="text"
-                class="form-control"
                 id="name"
+                for="name"
                 name="Name"
                 placeholder="Name"
                 required=""
-              >
-            </div>
-            <div class="col-xs-12 col-sm-6">
-              <label for="email">Email Address*</label>
-              <input
+              >Name*</v-text-field>
+            </v-flex>
+            <v-flex class="xs12 sm6">
+              <v-text-field
+                solo
                 type="text"
-                class="form-control"
                 id="email"
+                for="email"
                 name="Email"
                 placeholder="Email Address"
                 required=""
-              >
-            </div>
-            <div class="col-xs-12 col-sm-12">
-              <label for="message">Message*</label>
-              <textarea
-                class="form-control" 
+              >Email Address*</v-text-field>
+            </v-flex>
+            <v-flex class="xs12 sm12">
+              <v-textarea
+                solo
                 rows="5"
                 id="message"
+                for="message"
                 name="message"
                 placeholder="Your message"
                 required=""
-              ></textarea>
-            </div>
+              >Message*</v-textarea>
+            </v-flex>
             <div id="button-wrapper">
               <button type="submit">Send Message</button>
             </div>
-          </form>
+          </v-form>
         </div>
       </div>
     </div>
@@ -71,12 +72,8 @@ export default {
 #contact-form {
   padding-top: 25px;
 
-  form {
+  .v-form {
     margin-top: 60px;
-
-    div {
-      margin-top: 10px;
-    }
 
     #button-wrapper {
       display: flex;
