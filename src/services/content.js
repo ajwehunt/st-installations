@@ -1,6 +1,6 @@
 export default {
   info: {
-    email: "jesse@strongtowersecurity.com",
+    email: "jesse@strongtowerinstallations.com",
     phone: "(480) 580-4495",
     tt: {
       link: "https://www.thumbtack.com/-Gilbert-AZ/service/2365712",
