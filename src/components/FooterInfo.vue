@@ -38,7 +38,7 @@ export default {
 
   h1 {
     font-size: 14px;
-    font-weight: 800;
+    font-weight: 700;
     line-height: 19px;
     letter-spacing: 2px;
     margin: 38px 0 22px 0;
