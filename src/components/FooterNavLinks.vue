@@ -15,7 +15,7 @@ export default {
 
 <style lang="less">
 #footer-nav-links {
-  font-weight: 500;
+  font-weight: 700;
   flex-wrap: wrap;
   justify-content: space-evenly;
   max-width: 350px;
@@ -46,7 +46,7 @@ export default {
   }
 }
 
-@media only screen and (min-width: 1068px) {
+@media only screen and (min-width: 1260px) {
   #footer-nav-links {
     max-width: 800px;
   }

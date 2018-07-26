@@ -9,43 +9,42 @@
           <v-form
             class="v-form"
             method="POST"
-            :action="`http://formspree.io/${info.email}`"
+            v-model="form.valid"
+            :action="`http://formspree.io/adamjwehunt@gmail.com`"
           >
-            <v-flex class="xs12 sm6">
+            <v-flex class="form-input-wrapper xs12 sm6">
               <v-text-field
-                solo
-                type="text"
-                id="name"
-                for="name"
+                :rules="form.nameRules"
+                v-model="form.name"
                 name="Name"
-                placeholder="Name"
-                required=""
-              >Name*</v-text-field>
+                label="Name"
+                required
+              ></v-text-field>
             </v-flex>
-            <v-flex class="xs12 sm6">
+            <v-flex class="form-input-wrapper xs12 sm6">
               <v-text-field
-                solo
-                type="text"
-                id="email"
-                for="email"
+                :rules="form.emailRules"
+                v-model="form.email"
                 name="Email"
-                placeholder="Email Address"
-                required=""
-              >Email Address*</v-text-field>
+                label="Email Address"
+                required
+              ></v-text-field>
             </v-flex>
-            <v-flex class="xs12 sm12">
+            <v-flex class="form-input-wrapper xs12 sm12">
               <v-textarea
-                solo
-                rows="5"
-                id="message"
-                for="message"
-                name="message"
-                placeholder="Your message"
-                required=""
-              >Message*</v-textarea>
+                v-model="form.message"
+                rows="2"
+                name="Message"
+                label="Your Message"
+              ></v-textarea>
             </v-flex>
             <div id="button-wrapper">
-              <button type="submit">Send Message</button>
+              <button
+                :disabled="!form.valid"
+                type="submit"
+              >
+                Send Message
+              </button>
             </div>
           </v-form>
         </div>
@@ -62,9 +61,32 @@ export default {
   data() {
     return {
       info: content.info,
-      contact: content.page.contact
+      contact: content.page.contact,
+      form: {
+        valid: false,
+        name: "",
+        nameRules: [v => !!v || "Name is required"],
+        email: "",
+        emailRules: [
+          v => !!v || "E-mail is required",
+          v => /.+@.+/.test(v) || "E-mail must be valid"
+        ],
+        message: ""
+      }
     };
   }
+  // methods: {
+  //   submit() {
+  //     if (this.$refs.form.validate()) {
+  //       axios.post("/api/submit", {
+  //         name: this.form.name,
+  //         email: this.form.email,
+  //         select: this.select,
+  //         checkbox: this.checkbox
+  //       });
+  //     }
+  //   }
+  // }
 };
 </script>
 
@@ -74,6 +96,16 @@ export default {
 
   .v-form {
     margin-top: 60px;
+
+    .form-input-wrapper {
+      margin-bottom: 24px;
+
+      .v-label {
+        cursor: text;
+        font-size: 14px;
+        color: #999;
+      }
+    }
 
     #button-wrapper {
       display: flex;
@@ -104,6 +136,11 @@ export default {
           box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.5);
           text-decoration: none;
         }
+      }
+
+      button[disabled] {
+        background: #999;
+        box-shadow: none;
       }
     }
   }
