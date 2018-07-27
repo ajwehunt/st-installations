@@ -1,7 +1,7 @@
 <template>
   <div class="review">
     <div class="review-header">
-      <h2 class="review-header-name">{{data.name}}</h2>
+      <h2>{{data.name}}</h2>
       <a :href="info.link">
         <img
           class="img-responsive"
@@ -37,8 +37,9 @@ export default {
     width: 100%;
 
     h2 {
+      font-family: "Open Sans", sans-serif;
       font-size: 16px;
-      font-weight: 700;
+      font-weight: 600;
     }
 
     img {

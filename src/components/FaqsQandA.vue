@@ -50,7 +50,7 @@ export default {
     .question {
       font-size: 18px;
       line-height: 26px;
-      font-weight: 700;
+      font-weight: 600;
     }
 
     .answer {

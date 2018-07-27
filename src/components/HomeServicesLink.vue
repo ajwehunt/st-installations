@@ -31,8 +31,10 @@ export default {
   text-align: center;
 
   h2 {
-    font-size: 17px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
     font-weight: 500;
+    text-transform: uppercase;
   }
 
   &:hover {

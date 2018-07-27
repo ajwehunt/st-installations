@@ -47,6 +47,7 @@ export default {
       margin-bottom: 13px;
 
       h1 {
+        font-family: "Open Sans", sans-serif;
         color: #fff;
         font-size: 18px;
         font-weight: 500;
@@ -54,6 +55,8 @@ export default {
         &:first-child {
           margin-right: 12px;
           user-select: none;
+          font-size: 15px;
+          letter-spacing: 1px;
         }
 
         &:last-child {

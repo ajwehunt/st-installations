@@ -66,7 +66,7 @@ export default {
         },
         {
           id: "MediaRoomsAndSurroundSoundSystems",
-          name: "Media Rooms & Surround Sound Systems",
+          name: "Media Rooms & Sound Systems",
           summary:
             "There are many variables that can make or break or theater or media room. We can design rooms based on acoustics, aesthetics, and audio video needs. We work with architects and interior designers to make sure that every detail is perfect.",
           text:
@@ -333,7 +333,7 @@ export default {
   },
   component: {
     header: {
-      callText: "CALL US:",
+      callText: "Call or text,",
       logo: {
         main: {
           src: require("../assets/logo.png")

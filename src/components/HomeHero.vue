@@ -104,49 +104,69 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  top: 170px;
+  top: 70px;
   left: 0;
   right: 0;
   z-index: 2;
 
   h2 {
-    font-size: 46px;
-    font-weight: 500;
-    line-height: 50px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
     color: #fff;
     user-select: none;
     text-transform: uppercase;
+    text-align: center;
     margin-bottom: 8px;
   }
 }
 
-@media only screen and (min-width: 320px) {
-  /* .hero .container {
-    padding-top: 200px;
-    position: relative;
-  } */
+@media only screen and (min-width: 336px) {
+  #hero-text-box {
+    top: 80px;
+
+    h2 {
+      font-size: 18px;
+      line-height: 22px;
+    }
+  }
+}
+
+@media only screen and (min-width: 420px) {
+  #hero-text-box {
+    top: 90px;
+
+    h2 {
+      font-size: 23px;
+      line-height: 26px;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #hero-text-box {
+    top: 120px;
+
+    h2 {
+      font-size: 32px;
+      line-height: 38px;
+    }
+  }
 }
 
 @media only screen and (min-width: 992px) {
   #home-hero .VueCarousel-wrapper {
     max-height: 800px;
   }
-  /* .hero {
-    height: 462px;
-    max-height: 462px;
-    position: relative;
-  } */
-  /* .hero .container {
-    padding-top: 180px;
-  } */
-  /* .hero .container h1 {
-    font-size: 60px;
-    font-weight: 300;
-    line-height: 82px;
-    color: rgba(255,255,255,1);
-    position: relative;
-    z-index: 1;
-    display: block;
-  } */
+
+  #hero-text-box {
+    top: 160px;
+
+    h2 {
+      font-size: 40px;
+      line-height: 40px;
+    }
+  }
 }
 </style>

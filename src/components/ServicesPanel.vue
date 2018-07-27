@@ -36,9 +36,11 @@ export default {
   padding: 50px 0;
 
   h1 {
-    font-size: 30px;
-    margin-bottom: 16px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
     line-height: 1;
+    text-transform: uppercase;
+    margin-bottom: 16px;
   }
 }
 

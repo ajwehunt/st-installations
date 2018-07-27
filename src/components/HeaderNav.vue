@@ -63,7 +63,7 @@ export default {
     position: absolute;
     cursor: pointer;
     user-select: none;
-    height: 150px;
+    height: 123px;
     bottom: 20px;
   }
 
@@ -135,6 +135,9 @@ export default {
 @media only screen and (min-width: 768px) {
   #header-nav-links {
     display: flex;
+  }
+  #header-nav-main img {
+    height: 150px;
   }
 }
 </style>
