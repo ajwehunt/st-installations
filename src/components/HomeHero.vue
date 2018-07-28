@@ -6,17 +6,20 @@
     </div>
     <div id="home-hero-changer">
       <div id="hero-filter"></div>
-      <div id="main-hero">
-        <img :src="mainImageSrc">
+      <div
+        id="main-hero"
+        :style="{ backgroundImage: `url('${mainImageSrc}')`}"
+      >
+        <!-- <img :src="mainImageSrc"> -->
       </div>
-      <div id="hero-image-list">
+      <!-- <div id="hero-image-list">
         <div
           v-for="img in images"
           :key="img.id"
         >
           <img :src="img.image">
         </div>
-      </div>
+      </div> -->
     </div>
   </section>
 </template>
@@ -30,36 +33,36 @@ export default {
     return {
       header: content.page.home.hero.header,
       images: [],
-      mainImageSrc: require("../assets/stocks/relaxingguy.jpg")
+      mainImageSrc: require("../assets/stocks/hometheater_2.jpg")
     };
-  },
-  created() {
-    let self = this;
-
-    this.images = [
-      {
-        id: "1",
-        image: require("../assets/stocks/relaxingguy.jpg")
-      },
-      {
-        id: "2",
-        image: require("../assets/stocks/security_monitoring_pc.jpg")
-      },
-      {
-        id: "3",
-        image: require("../assets/stocks/hometheatre_1.jpg")
-      },
-      {
-        id: "4",
-        image: require("../assets/stocks/home_automation.jpg")
-      }
-    ];
-
-    setInterval(() => {
-      self.mainImageSrc =
-        self.images[Math.floor(Math.random() * self.images.length)].image;
-    }, 5000);
   }
+  // created() {
+  //   let self = this;
+
+  //   this.images = [
+  //     {
+  //       id: "1",
+  //       image: require("../assets/stocks/relaxingguy.jpg")
+  //     },
+  //     {
+  //       id: "2",
+  //       image: require("../assets/stocks/security_monitoring_pc.jpg")
+  //     },
+  //     {
+  //       id: "3",
+  //       image: require("../assets/stocks/hometheatre_1.jpg")
+  //     },
+  //     {
+  //       id: "4",
+  //       image: require("../assets/stocks/home_automation.jpg")
+  //     }
+  //   ];
+
+  //   setInterval(() => {
+  //     self.mainImageSrc =
+  //       self.images[Math.floor(Math.random() * self.images.length)].image;
+  //   }, 5000);
+  // }
 };
 </script>
 
@@ -75,17 +78,26 @@ export default {
 
 #hero-filter {
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.28);
+  background-color: rgba(0, 0, 0, 0.5);
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 1;
+  z-index: 2;
 }
 
-#main-hero img {
+// #main-hero img {
+//   width: 100%;
+//   height: 100%;
+// }
+
+#main-hero {
+  height: 500px;
   width: 100%;
-  height: 100%;
+  background-position-x: center;
+  background-size: cover;
+  background-position-y: -555px;
+  z-index: 1;
 }
 
 #hero-image-list {
@@ -107,7 +119,7 @@ export default {
   top: 70px;
   left: 0;
   right: 0;
-  z-index: 2;
+  z-index: 3;
 
   h2 {
     font-family: "Open Sans", sans-serif;
