@@ -98,7 +98,7 @@ export default {
           text:
             "We are in a time where there’s nothing worse than trying to watch your favorite show or movie only to interrupted by it “buffering” every few minutes.  We are well aware of the headaches that troublesome wifi can cause and because of this, we have made it a priority to use the newest and most reliable products available.  Whether it is relocating the router by running hard lines to a more centralized location or installing a mesh network, we will find the solution that the cable guys aren’t willing to do.",
           image: {
-            src: require("../assets/stocks/Home_automation_app_1.jpg"),
+            src: require("../assets/stocks/home_automation_app_1.jpg"),
             alt: "Home Wifi System"
           },
           faIcon: "fa-wifi"
@@ -123,7 +123,7 @@ export default {
         id: "about-img",
         text: "WE ARE STRONG TOWER",
         image: {
-          src: require("../assets/stocks/hometheatre_1.jpg"),
+          src: require("../assets/stocks/security_monitoring_pc.jpg"),
           alt: ""
         }
       },
@@ -150,7 +150,7 @@ export default {
         id: "faqs-img",
         text: "COMMONLY ASKED QUESTIONS",
         image: {
-          src: require("../assets/stocks/hometheatre_1.jpg"),
+          src: require("../assets/stocks/home_automation.jpg"),
           alt: ""
         }
       },
@@ -196,7 +196,7 @@ export default {
         id: "testimonials-img",
         text: "WHAT PEOPLE ARE SAYING",
         image: {
-          src: require("../assets/stocks/hometheatre_1.jpg"),
+          src: require("../assets/stocks/home_automation_lady.jpg"),
           alt: ""
         }
       },

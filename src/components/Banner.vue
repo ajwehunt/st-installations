@@ -40,6 +40,7 @@ export default {
   h1 {
     position: absolute;
     align-self: center;
+    font-family: "Open Sans", sans-serif;
     z-index: 1;
     font-size: 30px;
     margin-bottom: 50px;

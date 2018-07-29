@@ -94,9 +94,8 @@ export default {
 #main-hero {
   height: 500px;
   width: 100%;
-  background-position-x: center;
+  background-position: center;
   background-size: cover;
-  background-position-y: -555px;
   z-index: 1;
 }
 
