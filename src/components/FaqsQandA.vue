@@ -8,8 +8,8 @@
       <div class="qsAndAs-wrapper row">
         <ul>
           <li
-            v-for="qAndA in faqs.qsAndAs"
-            :key="qAndA.q"
+            v-for="(qAndA, index) in faqs.qsAndAs"
+            :key="index"
           >
             <div class="question">{{ qAndA.q }}</div>
             <div class="answer">{{ qAndA.a }}</div>

@@ -13,8 +13,8 @@
           :perPageCustom="[[0,1], [768, 2]]"
         >
           <slide
-            v-for="logo in partners.logos"
-            :key="logo.alt"
+            v-for="(logo, index) in partners.logos"
+            :key="index"
           >
             <div><img :src="logo.src" :alt="logo.alt"></div>
           </slide>

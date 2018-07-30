@@ -20,21 +20,6 @@ export default {
   justify-content: space-evenly;
   max-width: 350px;
   margin: 24px auto 32px;
-
-  li {
-    &:last-child {
-      padding: 3px;
-      border: 2px solid #7f7f7f;
-      border-radius: 2px;
-    }
-
-    &:last-child:hover,
-    &.router-link-exact-active:last-child {
-      border: 2px solid #a7090a;
-      color: #fff;
-      background: #a7090a;
-    }
-  }
 }
 
 @media only screen and (min-width: 768px) {

@@ -13,9 +13,7 @@
           :alt="logo.alt"
         >
       </router-link>
-      <!-- <button class='hamburger-btn' type="button" name="menu" ng-click="toggleNav()">
-        <i class="fa fa-bars" aria-hidden="true"></i>
-      </button> -->
+      <HeaderMobileMenu />
       <NavLinks id="header-nav-links" />
     </div>
   </div>
@@ -24,9 +22,11 @@
 <script>
 import content from "@/services/content.js";
 import NavLinks from "@/components/NavLinks.vue";
+import HeaderMobileMenu from "@/components/HeaderMobileMenu.vue";
 
 export default {
   components: {
+    HeaderMobileMenu,
     NavLinks
   },
   name: "HeaderNav",
@@ -48,9 +48,10 @@ export default {
 
 #header-nav-main {
   display: flex;
+  position: relative;
   align-items: flex-end;
   justify-content: space-between;
-  height: 128px;
+  height: 70px;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
@@ -63,8 +64,8 @@ export default {
     position: absolute;
     cursor: pointer;
     user-select: none;
-    height: 123px;
-    bottom: 20px;
+    height: 103px;
+    bottom: 10px;
   }
 
   #logo-main {
@@ -87,6 +88,10 @@ export default {
 .sticky-both {
   #header-nav-main {
     padding-bottom: 0px;
+
+    #header-nav-links {
+      max-width: 100% !important;
+    }
 
     img {
       bottom: 5px;
@@ -116,28 +121,31 @@ export default {
   li {
     font-size: 16px;
     font-weight: 700;
+  }
+}
 
-    &:last-child {
-      border: 3px solid #7f7f7f;
-      padding: 6px;
-      border-radius: 2px;
+@media only screen and (min-width: 680px) {
+  #header-nav-main {
+    height: 128px;
+
+    img {
+      height: 150px;
+      bottom: 20px;
     }
 
-    &:last-child:hover,
-    &.router-link-exact-active:last-child {
-      border: 3px solid #a7090a;
-      color: #fff;
-      background: #a7090a;
+    #header-nav-links {
+      display: flex;
+      max-width: 330px;
     }
   }
 }
 
-@media only screen and (min-width: 768px) {
-  #header-nav-links {
-    display: flex;
-  }
-  #header-nav-main img {
-    height: 150px;
+@media only screen and (min-width: 940px) {
+  #header-nav-main {
+    #header-nav-links {
+      display: flex;
+      max-width: 100%;
+    }
   }
 }
 </style>

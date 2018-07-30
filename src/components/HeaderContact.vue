@@ -53,10 +53,16 @@ export default {
         font-weight: 500;
 
         &:first-child {
+          display: none;
           margin-right: 12px;
           user-select: none;
           font-size: 15px;
           letter-spacing: 1px;
+        }
+        @media only screen and (min-width: 422px) {
+          &:first-child {
+            display: block;
+          }
         }
 
         &:last-child {

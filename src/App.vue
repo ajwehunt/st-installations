@@ -44,8 +44,9 @@ export default {
     handleScroll() {
       const stickyStatus = this.stickyStatus;
       const pageY = window.pageYOffset;
+      const pageX = window.innerWidth;
       const headerContactHeight = 42;
-      const headerNavHeight = 118;
+      const headerNavHeight = pageX > 680 ? 118 : 60;
 
       if (stickyStatus != "sticky-both" && pageY >= headerNavHeight) {
         this.stickyStatus = "sticky-both";
@@ -249,13 +250,19 @@ h2 {
 
     #header-nav-wrap {
       position: fixed;
-      top: -70px;
+      top: -10px;
+    }
+
+    @media only screen and (min-width: 680px) {
+      #header-nav-wrap {
+        top: -70px;
+      }
     }
   }
 }
 
 #router-view {
-  padding-top: 176px;
+  padding-top: 118px;
 }
 
 .row {
@@ -309,6 +316,12 @@ h2 {
 .fade-enter,
 .fade-leave-active {
   opacity: 0;
+}
+
+@media only screen and (min-width: 680px) {
+  #router-view {
+    padding-top: 176px;
+  }
 }
 
 @media only screen and (min-width: 768px) {

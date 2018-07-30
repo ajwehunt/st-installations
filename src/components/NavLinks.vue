@@ -2,10 +2,10 @@
   <nav>
     <ul class="navigation">
         <router-link
-          v-for="route in $router.options.routes"
+          v-for="(route, index) in $router.options.routes"
           v-if="!route.meta.hidden"
           tag="li"
-          :key="route.path"
+          :key="index"
           :to="route"
         >
           {{route.name}}
@@ -42,6 +42,19 @@ export default {
     &:hover {
       border-bottom: 3px solid #a7090a;
       color: #000;
+    }
+
+    &:last-child {
+      padding: 3px;
+      border: 2px solid #7f7f7f;
+      border-radius: 2px;
+    }
+
+    &:last-child:hover,
+    &.router-link-exact-active:last-child {
+      border: 2px solid #a7090a;
+      color: #fff;
+      background: #a7090a;
     }
   }
 }
