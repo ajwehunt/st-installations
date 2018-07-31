@@ -40,6 +40,7 @@ export default {
     font-size: 20px;
     line-height: 1;
     text-transform: uppercase;
+    padding-top: 18px;
     margin-bottom: 16px;
   }
 }
@@ -48,6 +49,10 @@ export default {
   .service-panel {
     flex-direction: row;
     padding: 70px 0;
+
+    h1 {
+      padding-top: 0px;
+    }
   }
 
   .service-panel:nth-child(even) {

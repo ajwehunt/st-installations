@@ -25,8 +25,8 @@ export default {
 
 <style lang="less">
 .review {
-  height: 430px;
-  width: 300px;
+  height: 560px;
+  width: 240px;
   max-width: 100%;
 
   .review-header {
@@ -77,6 +77,12 @@ export default {
 
   .review-date {
     color: #666;
+  }
+}
+@media only screen and (min-width: 460px) {
+  .review {
+    width: 300px;
+    height: 430px;
   }
 }
 </style>

@@ -244,6 +244,7 @@ h2 {
   &.sticky-both {
     #header-contact-wrap {
       position: fixed;
+      background: white;
       top: -42px;
       z-index: 7;
     }
@@ -280,9 +281,11 @@ h2 {
   padding-right: 5px;
 }
 
-#router-view .container {
-  padding: 50px 5px 70px;
-  border-bottom: 2px solid #f4f4f4;
+#router-view {
+  .container {
+    padding: 0px 5px 40px;
+    border-bottom: 2px solid #f4f4f4;
+  }
 }
 
 .section-title {
@@ -290,7 +293,7 @@ h2 {
   font-size: 19px;
   font-weight: 700;
   line-height: 22px;
-  margin-bottom: 15px;
+  margin: 24px 0 15px;
   text-transform: uppercase;
   letter-spacing: 3px;
 }
@@ -320,17 +323,33 @@ h2 {
 
 @media only screen and (min-width: 680px) {
   #router-view {
+    .container {
+      padding: 10px 5px 50px;
+    }
+
     padding-top: 176px;
   }
 }
 
 @media only screen and (min-width: 768px) {
+  #router-view {
+    .container {
+      padding: 20px 5px 60px;
+    }
+  }
+
   .container {
     width: 730px;
   }
 }
 
 @media only screen and (min-width: 992px) {
+  #router-view {
+    .container {
+      padding: 40px 5px 70px;
+    }
+  }
+
   .container {
     width: inherit;
     padding: 0 10px;

@@ -10,7 +10,7 @@
           :navigationEnabled="true"
           navigationNextLabel="<i class='fa fa-chevron-right' aria-hidden='true'></i>"
           navigationPrevLabel="<i class='fa fa-chevron-left' aria-hidden='true'></i>"
-          :perPageCustom="[[0,1], [768, 2]]"
+          :perPageCustom="[[0,1], [992, 2]]"
         >
           <slide
             v-for="(review, index) in reviews.tt.list"
@@ -69,7 +69,7 @@ export default {
   }
 
   .VueCarousel {
-    width: 900px;
+    width: 680px;
 
     .VueCarousel-slide {
       display: flex;
@@ -86,39 +86,103 @@ export default {
     }
 
     .VueCarousel-navigation-prev {
-      left: -4px;
-      color: #797979;
+      left: 32%;
     }
 
     .VueCarousel-navigation-next {
-      right: -4px;
+      right: 32%;
+    }
+
+    .VueCarousel-navigation-prev,
+    .VueCarousel-navigation-next {
       color: #797979;
     }
 
-    .VueCarousel-pagination {
+    .VueCarousel-pagination,
+    .VueCarousel-navigation--disabled {
       display: none;
     }
   }
 }
 
+@media only screen and (min-width: 400px) {
+  #reviews {
+    .VueCarousel {
+      .VueCarousel-navigation-prev {
+        left: 28%;
+      }
+
+      .VueCarousel-navigation-next {
+        right: 28%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 460px) {
+  #reviews {
+    .VueCarousel {
+      .VueCarousel-navigation-prev {
+        left: 24%;
+      }
+
+      .VueCarousel-navigation-next {
+        right: 24%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 520px) {
+  #reviews {
+    .VueCarousel {
+      .VueCarousel-navigation-prev {
+        left: 20%;
+      }
+
+      .VueCarousel-navigation-next {
+        right: 20%;
+      }
+    }
+  }
+}
+
 @media only screen and (min-width: 768px) {
-  #reviews .VueCarousel-pagination {
-    display: block;
+  #reviews {
+    .VueCarousel {
+      .VueCarousel-pagination {
+        display: block;
+      }
+    }
   }
 }
 
 @media only screen and (min-width: 992px) {
   #reviews {
-    .VueCarousel-navigation-button {
-      font-size: 24px !important;
-    }
+    .VueCarousel {
+      width: 900px;
 
-    .VueCarousel-navigation-prev {
-      left: -4%;
-    }
+      .VueCarousel-navigation-prev {
+        left: 5%;
+      }
 
-    .VueCarousel-navigation-next {
-      right: -4%;
+      .VueCarousel-navigation-next {
+        right: 5%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1260px) {
+  #reviews {
+    .VueCarousel {
+      .VueCarousel-navigation-prev {
+        left: -4%;
+      }
+
+      .VueCarousel-navigation-next {
+        right: -4%;
+      }
     }
   }
 }

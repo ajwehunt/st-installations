@@ -23,7 +23,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 400px;
+  height: 230px;
   text-align: center;
   overflow: hidden;
   background-color: #000;
@@ -42,8 +42,8 @@ export default {
     align-self: center;
     font-family: "Open Sans", sans-serif;
     z-index: 1;
-    font-size: 30px;
-    margin-bottom: 50px;
+    font-size: 22px;
+    margin-bottom: 20px;
     color: #fff;
     letter-spacing: 1px;
   }
@@ -58,9 +58,43 @@ export default {
   }
 }
 
+@media only screen and (min-width: 336px) {
+  .banner {
+    height: 240px;
+
+    h1 {
+      font-size: 24px;
+    }
+  }
+}
+
+@media only screen and (min-width: 420px) {
+  .banner {
+    height: 280px;
+
+    h1 {
+      font-size: 26px;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .banner {
+    height: 320px;
+
+    h1 {
+      font-size: 28px;
+    }
+  }
+}
+
 @media only screen and (min-width: 992px) {
-  .banner h1 {
-    font-size: 35px;
+  .banner {
+    height: 360px;
+
+    h1 {
+      font-size: 34px;
+    }
   }
 }
 </style>

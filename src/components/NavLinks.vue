@@ -27,6 +27,7 @@ export default {
   flex-wrap: wrap;
   justify-content: center;
   user-select: none;
+  padding-bottom: 6px;
 
   li {
     font-family: "Dosis", sans-serif;

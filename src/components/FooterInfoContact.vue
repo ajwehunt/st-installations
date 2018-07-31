@@ -60,8 +60,24 @@ export default {
     }
 
     a {
-      font-size: 18px;
+      font-size: 12px;
       color: #4a4a4a;
+    }
+  }
+}
+
+@media only screen and (min-width: 375px) {
+  #footer-info-contact div {
+    a {
+      font-size: 14px;
+    }
+  }
+}
+
+@media only screen and (min-width: 375px) {
+  #footer-info-contact div {
+    a {
+      font-size: 18px;
     }
   }
 }

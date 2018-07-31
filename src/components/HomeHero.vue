@@ -14,8 +14,8 @@
       </div>
       <!-- <div id="hero-image-list">
         <div
-          v-for="img in images"
-          :key="img.id"
+          v-for="(img, index) in images"
+          :key="index"
         >
           <img :src="img.image">
         </div>
@@ -92,7 +92,7 @@ export default {
 // }
 
 #main-hero {
-  height: 500px;
+  height: 310px;
   width: 100%;
   background-position: center;
   background-size: cover;
@@ -123,13 +123,13 @@ export default {
   h2 {
     font-family: "Open Sans", sans-serif;
     font-weight: 600;
-    font-size: 16px;
-    line-height: 22px;
+    font-size: 22px;
+    line-height: 24px;
     color: #fff;
     user-select: none;
     text-transform: uppercase;
     text-align: center;
-    margin-bottom: 8px;
+    margin-bottom: 12px;
   }
 }
 
@@ -138,30 +138,41 @@ export default {
     top: 80px;
 
     h2 {
-      font-size: 18px;
-      line-height: 22px;
+      font-size: 24px;
+      line-height: 28px;
+      margin-bottom: 14px;
     }
   }
 }
 
 @media only screen and (min-width: 420px) {
+  #main-hero {
+    height: 350px;
+  }
+
   #hero-text-box {
     top: 90px;
 
     h2 {
-      font-size: 23px;
-      line-height: 26px;
+      font-size: 26px;
+      line-height: 32px;
+      margin-bottom: 16px;
     }
   }
 }
 
 @media only screen and (min-width: 768px) {
+  #main-hero {
+    height: 450px;
+  }
+
   #hero-text-box {
     top: 120px;
 
     h2 {
       font-size: 32px;
       line-height: 38px;
+      margin-bottom: 18px;
     }
   }
 }
@@ -171,12 +182,17 @@ export default {
     max-height: 800px;
   }
 
+  #main-hero {
+    height: 540px;
+  }
+
   #hero-text-box {
     top: 160px;
 
     h2 {
       font-size: 40px;
       line-height: 40px;
+      margin-bottom: 20px;
     }
   }
 }

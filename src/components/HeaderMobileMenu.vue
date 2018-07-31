@@ -34,9 +34,14 @@ export default {
   border-radius: 0px;
   box-shadow: -4px 6px 8px -1px rgba(0, 0, 0, 0.3);
 
+  ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
   li {
-    font-size: 24px;
-    line-height: 44px;
+    font-size: 28px;
+    line-height: 32px;
   }
 }
 
@@ -47,7 +52,7 @@ export default {
 
 #mobile-nav-links {
   background: #fff;
-  padding-bottom: 8px;
+  padding: 10px 10px 20px;
 }
 
 @media only screen and (min-width: 680px) {
