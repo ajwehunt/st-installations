@@ -48,11 +48,17 @@ export default {
 #mobile-menu-icon {
   display: block;
   font-size: 50px;
+  user-select: none;
 }
 
 #mobile-nav-links {
   background: #fff;
   padding: 10px 10px 20px;
+
+  li {
+    width: 85%;
+    text-align: center;
+  }
 }
 
 @media only screen and (min-width: 680px) {
