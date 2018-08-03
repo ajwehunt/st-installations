@@ -45,7 +45,7 @@ export default {
       const stickyStatus = this.stickyStatus;
       const pageY = window.pageYOffset;
       const pageX = window.innerWidth;
-      const headerContactHeight = 42;
+      const headerContactHeight = 40;
       const headerNavHeight = pageX > 680 ? 118 : 60;
 
       if (stickyStatus != "sticky-both" && pageY >= headerNavHeight) {
@@ -244,7 +244,7 @@ h2 {
   &.sticky-both {
     #header-contact-wrap {
       position: fixed;
-      background: white;
+      background: black;
       top: -42px;
       z-index: 7;
     }
