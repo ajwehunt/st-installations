@@ -52,15 +52,15 @@ export default {
     margin: 10px 0;
 
     i {
-      width: 30px;
-      margin-right: 16px;
+      width: 22px;
+      margin-right: 8px;
       font-size: 20px;
       color: #a7090a;
       text-align: center;
     }
 
     a {
-      font-size: 12px;
+      font-size: 14px;
       color: #4a4a4a;
     }
   }
@@ -69,15 +69,12 @@ export default {
 @media only screen and (min-width: 375px) {
   #footer-info-contact div {
     a {
-      font-size: 14px;
-    }
-  }
-}
-
-@media only screen and (min-width: 375px) {
-  #footer-info-contact div {
-    a {
       font-size: 18px;
+    }
+
+    i {
+      width: 30px;
+      margin-right: 16px;
     }
   }
 }

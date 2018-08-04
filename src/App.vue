@@ -183,7 +183,7 @@ html {
 }
 
 p {
-  margin: 0 0 10px;
+  margin: 0 0 12px;
 }
 
 a {
