@@ -4,8 +4,8 @@
         <Banner :data="services.banner" />
         <section id="services-panel-wrapper" class="container">
           <Services-panel
-            v-for="(service, index) in services.servicesList"
-            :key="index"
+            v-for="service in services.servicesList"
+            :key="service.id"
             :data="service"
           />
         </section>

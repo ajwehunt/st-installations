@@ -8,8 +8,8 @@
         <p>{{ homeServices.summary }}</p>
         <div id="home-services-grid">
           <HomeServicesLink
-            v-for="(service, index) in services.servicesList"
-            :key="index"
+            v-for="service in services.servicesList"
+            :key="service.id"
             :data="service"
           />
         </div>

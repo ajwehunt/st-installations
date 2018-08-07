@@ -2,11 +2,11 @@
   <nav>
     <ul class="navigation">
         <router-link
-          v-for="(route, index) in $router.options.routes"
+          v-for="route in $router.options.routes"
           v-if="!route.meta.hidden"
-          tag="li"
-          :key="index"
+          :key="route.name"
           :to="route"
+          tag="li"
         >
           {{route.name}}
         </router-link>

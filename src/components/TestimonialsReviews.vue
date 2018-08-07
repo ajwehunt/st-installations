@@ -13,8 +13,8 @@
           :perPageCustom="[[0,1], [992, 2]]"
         >
           <slide
-            v-for="(review, index) in reviews.tt.list"
-            :key="index"
+            v-for="review in reviews.tt.reviewList"
+            :key="review.id"
           >
             <TestimonialsReviewsSlides
               :data="review"
@@ -24,8 +24,8 @@
             />
           </slide>
           <slide
-            v-for="(review, index) in reviews.fb.list"
-            :key="index"
+            v-for="review in reviews.fb.reviewList"
+            :key="review.id"
           >
             <TestimonialsReviewsSlides
               :data="review"

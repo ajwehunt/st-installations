@@ -157,33 +157,39 @@ export default {
       header: "FAQS",
       qsAndAs: [
         {
+          id: 1,
           q: "What is your typical process for working with a new customer?",
           a:
             "We take the time to listen to what they need and want, striving to make good and honest suggestions .We then move forward with a fair and honest quote."
         },
         {
+          id: 2,
           q:
             "What education and/or training do you have that relates to your work?",
           a:
             "I have 10 years experience in this field and I am learning new things everyday that I am using on the jobsite. I go to all the training that distributors have so that I can be up to date on what is happening in the industry."
         },
         {
+          id: 3,
           q: "How did you get started doing this type of work?",
           a:
             "I was looking for a Job and started as a sales rep for a Security company. In a short period of time I moved from sales rep to tech and then to Operations Manager. I love installing, problem solving, and making customers happy!"
         },
         {
+          id: 4,
           q: "What types of customers have you worked with?",
           a:
             "All types, we have done work for homeowners, small business, and large business."
         },
         {
+          id: 5,
           q:
             "What advice would you give a customer looking to hire a provider in your area of work?",
           a:
             "Look for someone that cares about what you want and is willing to come up with good solutions to accomplish what you are after."
         },
         {
+          id: 6,
           q:
             "What questions should customers think through before talking to professionals about their project?",
           a:
@@ -225,8 +231,9 @@ export default {
         header: "REVIEWS",
         fb: {
           logo: require("../assets/social/facebook_logo_small.png"),
-          list: [
+          reviewList: [
             {
+              id: 1,
               name: "Tara Davis",
               rating: 5,
               text:
@@ -234,6 +241,7 @@ export default {
               date: "Feb 10, 2018"
             },
             {
+              id: 2,
               name: "Kathy Lynch",
               rating: 5,
               text:
@@ -241,6 +249,7 @@ export default {
               date: "June 28, 2017"
             },
             {
+              id: 3,
               name: "Michael Lynch",
               rating: 5,
               text:
@@ -248,6 +257,7 @@ export default {
               date: "June 30, 2017"
             },
             {
+              id: 4,
               name: "Brandon Ray",
               rating: 5,
               text:
@@ -255,6 +265,7 @@ export default {
               date: "March 22, 2017"
             },
             {
+              id: 5,
               name: "Sujean Wilson",
               rating: 5,
               text:
@@ -262,6 +273,7 @@ export default {
               date: "April 19, 2016"
             },
             {
+              id: 6,
               name: "Ryan Schultze",
               rating: 5,
               text:
@@ -272,8 +284,9 @@ export default {
         },
         tt: {
           logo: require("../assets/social/thumbtack_logo_small.png"),
-          list: [
+          reviewList: [
             {
+              id: 1,
               name: "James G.",
               rating: 5,
               text:
@@ -281,6 +294,7 @@ export default {
               date: "Jul 1, 2018"
             },
             {
+              id: 2,
               name: "Paulette W.",
               rating: 5,
               text:
@@ -288,6 +302,7 @@ export default {
               date: "Nov 22, 2017"
             },
             {
+              id: 3,
               name: "Jonathan S.",
               rating: 5,
               text:
@@ -295,6 +310,7 @@ export default {
               date: "Dec 18, 2016"
             },
             {
+              id: 4,
               name: "Jacqueline P.",
               rating: 5,
               text:
@@ -302,6 +318,7 @@ export default {
               date: "May 27, 2018"
             },
             {
+              id: 5,
               name: "Vince D.",
               rating: 5,
               text:
@@ -309,6 +326,7 @@ export default {
               date: "May 19, 2018"
             },
             {
+              id: 6,
               name: "Karen N.",
               rating: 5,
               text:
@@ -367,66 +385,79 @@ export default {
       headerText: "OUR PARTNERS",
       logos: [
         {
+          id: 1,
           src: require("../assets/partners/2gig_logo.jpg"),
           link: "",
           alt: "2gig"
         },
         {
+          id: 2,
           src: require("../assets/partners/alarmdotcom_logo.jpg"),
           link: "",
           alt: "Alarmdotcom"
         },
         {
+          id: 3,
           src: require("../assets/partners/cctvcore_logo.jpg"),
           link: "",
           alt: "Cctvcore"
         },
         {
+          id: 4,
           src: require("../assets/partners/denom_logo.jpg"),
           link: "",
           alt: "Denom"
         },
         {
+          id: 5,
           src: require("../assets/partners/elura_logo.jpg"),
           link: "",
           alt: "Elura"
         },
         {
+          id: 6,
           src: require("../assets/partners/honeywell_logo.jpg"),
           link: "",
           alt: "Honeywell"
         },
         {
+          id: 7,
           src: require("../assets/partners/jamo_logo.jpg"),
           link: "",
           alt: "Jamo"
         },
         {
+          id: 8,
           src: require("../assets/partners/mountainwest_logo.jpg"),
           link: "",
           alt: "Mainwest"
         },
         {
+          id: 9,
           src: require("../assets/partners/onkyo_logo.jpg"),
           link: "",
           alt: "Onkyo"
         },
         {
+          id: 10,
           src: require("../assets/partners/ring_logo.jpg"),
           link: "",
           alt: "Ring"
         },
         {
+          id: 11,
           src: require("../assets/partners/samsung_logo.jpg"),
           link: "",
           alt: "Samsung"
         },
         {
+          id: 12,
           src: require("../assets/partners/wave_logo.jpg"),
           link: "",
           alt: "Wave"
         },
         {
+          id: 13,
           src: require("../assets/partners/yamaha_logo.jpg"),
           link: "",
           alt: "Yamaha"

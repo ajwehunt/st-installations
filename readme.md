@@ -1,5 +1,4 @@
 * ToDo
-    - replace indexed keys on v-fors
     - api
     - logo fix
     - titles for mobile menu

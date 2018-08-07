@@ -14,8 +14,8 @@
       </div>
       <!-- <div id="hero-image-list">
         <div
-          v-for="(img, index) in images"
-          :key="index"
+          v-for="img in images"
+          :key="img.id"
         >
           <img :src="img.image">
         </div>
