@@ -25,7 +25,7 @@ export default {
           "Whether you are renting, buying or building a home in Arizona, we can help! From troubleshooting and salvaging old systems to bringing a new dream to reality, our crew specializes in solving the puzzle in the most respectful and cost-efficient way. We do what’s right for each customer, every time."
       },
       social: {
-        headerText: "SOCIAL MEDIA"
+        headerText: "FACEBOOK FEED"
       }
     },
     services: {
