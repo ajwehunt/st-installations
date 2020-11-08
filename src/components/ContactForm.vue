@@ -10,7 +10,7 @@
             class="v-form"
             method="POST"
             v-model="form.valid"
-            :action="`http://formspree.io/adamjwehunt@gmail.com`"
+            :action="`http://formspree.io/jesse@strongtowerinstallations.com`"
           >
             <v-flex class="form-input-wrapper xs12 sm6">
               <v-text-field
@@ -31,20 +31,10 @@
               ></v-text-field>
             </v-flex>
             <v-flex class="form-input-wrapper xs12 sm12">
-              <v-textarea
-                v-model="form.message"
-                rows="2"
-                name="Message"
-                label="Your Message"
-              ></v-textarea>
+              <v-textarea v-model="form.message" rows="2" name="Message" label="Your Message"></v-textarea>
             </v-flex>
             <div id="button-wrapper">
-              <button
-                :disabled="!form.valid"
-                type="submit"
-              >
-                Send Message
-              </button>
+              <button :disabled="!form.valid" type="submit">Send Message</button>
             </div>
           </v-form>
         </div>
